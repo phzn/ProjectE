@@ -1,0 +1,1058 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4690BD40-D6F6-4A25-AD67-5B6654FCBD8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoreMountains</RootNamespace>
+    <AssemblyName>MoreMountains.Tools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lofelt.NiceVibrations">
+      <HintPath>G:\SteamLibrary\steamapps\common\ProjectExhibitionist\Project Exhibitionist_Data\Managed\Lofelt.NiceVibrations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FeedbacksForThirdParty\MMAutoFocus.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMAutoFocus_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMBloomShakeEvent.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMBloomShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMBloomShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMBloomShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMBloomShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMBloomShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCameraZoom.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChannelMixerShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChannelMixerShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChannelMixerShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChannelMixerShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChromaticAberrationShakeEvent.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChromaticAberrationShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChromaticAberrationShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChromaticAberrationShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChromaticAberrationShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMChromaticAberrationShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachineCameraShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachineClippingPlanesShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachineFieldOfViewShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachineFreeLookZoom.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachineHelpers.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachineOrthographicSizeShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachinePriorityBrainListener.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachinePriorityEvent.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachinePriorityListener.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMCinemachineZoom.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMColorAdjustmentsShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMColorAdjustmentsShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMColorAdjustmentsShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMColorAdjustmentsShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMColorGradingShakeEvent.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMColorGradingShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMDepthOfFieldShakeEvent.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMDepthOfFieldShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMDepthOfFieldShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMDepthOfFieldShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMDepthOfFieldShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMDepthOfFieldShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMExposureShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMExposureShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMFeedbackNVSettings.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMFilmGrainShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMFilmGrainShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMFilmGrainShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMFilmGrainShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Bloom.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Bloom_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Bloom_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ChannelMixer_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ChannelMixer_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ChromaticAberration.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ChromaticAberration_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ChromaticAberration_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_CinemachineImpulse.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_CinemachineImpulseClear.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_CinemachineImpulseSource.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_CinemachineTransition.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ColorAdjustments_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ColorAdjustments_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_ColorGrading.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_DepthOfField.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_DepthOfField_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_DepthOfField_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Exposure_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_FilmGrain_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_FilmGrain_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_GlobalPPVolumeAutoBlend.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_GlobalPPVolumeAutoBlend_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Haptics.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_LensDistortion.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_LensDistortion_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_LensDistortion_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Light2D_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_MotionBlur_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_MotionBlur_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_NVClip.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_NVContinuous.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_NVControl.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_NVEmphasis.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_NVPreset.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_PaniniProjection_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_PaniniProjection_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkit.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitBackgroundColor.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitBoolBase.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitBorderColor.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitBorderRadius.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitBorderWidth.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitClass.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitColorBase.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitFloatBase.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitFontSize.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitImageTint.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitOpacity.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitRotate.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitScale.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitSize.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitStylesheet.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitText.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitTextColor.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitTransformOrigin.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitTranslate.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitVector2Base.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_UIToolkitVisible.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Vignette.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Vignette_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_Vignette_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_VisualEffect.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_VisualEffectSetProperty.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_WhiteBalance_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMF_WhiteBalance_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMGlobalPostProcessingVolumeAutoBlend.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMGlobalPostProcessingVolumeAutoBlend_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMHDRPHelpers.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMLensDistortionShakeEvent.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMLensDistortionShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMLensDistortionShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMLensDistortionShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMLensDistortionShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMLensDistortionShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMMotionBlurShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMMotionBlurShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMMotionBlurShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMMotionBlurShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMPaniniProjectionShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMPaniniProjectionShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMPaniniProjectionShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMPaniniProjectionShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMPostProcessingHelpers.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMURPHelpers.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMVignetteShakeEvent.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMVignetteShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMVignetteShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMVignetteShaker.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMVignetteShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMVignetteShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMWhiteBalanceShakeEvent_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMWhiteBalanceShakeEvent_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMWhiteBalanceShaker_HDRP.cs" />
+    <Compile Include="FeedbacksForThirdParty\MMWhiteBalanceShaker_URP.cs" />
+    <Compile Include="FeedbacksForThirdParty\UIToolkitDemo.cs" />
+    <Compile Include="FeedbacksForThirdParty\UIToolkitDemoAction.cs" />
+    <Compile Include="Feedbacks\BlinkPhase.cs" />
+    <Compile Include="Feedbacks\BlinkTargetRenderer.cs" />
+    <Compile Include="Feedbacks\DemoBall.cs" />
+    <Compile Include="Feedbacks\DemoButton.cs" />
+    <Compile Include="Feedbacks\DemoGhost.cs" />
+    <Compile Include="Feedbacks\DemoPackageTester.cs" />
+    <Compile Include="Feedbacks\FeedbackHelpAttribute.cs" />
+    <Compile Include="Feedbacks\FeedbackPathAttribute.cs" />
+    <Compile Include="Feedbacks\InternalWiggleProperties.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterDistortionShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterDistortionShaker.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterEchoShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterEchoShaker.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterHighPassShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterHighPassShaker.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterLowPassShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterLowPassShaker.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterReverbShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioFilterReverbShaker.cs" />
+    <Compile Include="Feedbacks\MMAudioSourcePitchShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioSourcePitchShaker.cs" />
+    <Compile Include="Feedbacks\MMAudioSourceSequencer.cs" />
+    <Compile Include="Feedbacks\MMAudioSourceStereoPanShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioSourceStereoPanShaker.cs" />
+    <Compile Include="Feedbacks\MMAudioSourceVolumeShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMAudioSourceVolumeShaker.cs" />
+    <Compile Include="Feedbacks\MMBlink.cs" />
+    <Compile Include="Feedbacks\MMCameraClippingPlanesShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMCameraClippingPlanesShaker.cs" />
+    <Compile Include="Feedbacks\MMCameraFieldOfViewShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMCameraFieldOfViewShaker.cs" />
+    <Compile Include="Feedbacks\MMCameraOrthographicSizeShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMCameraOrthographicSizeShaker.cs" />
+    <Compile Include="Feedbacks\MMCameraShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMCameraShakeProperties.cs" />
+    <Compile Include="Feedbacks\MMCameraShaker.cs" />
+    <Compile Include="Feedbacks\MMCameraShakerRotation.cs" />
+    <Compile Include="Feedbacks\MMCameraShakeStopEvent.cs" />
+    <Compile Include="Feedbacks\MMCameraZoomEvent.cs" />
+    <Compile Include="Feedbacks\MMCameraZoomModes.cs" />
+    <Compile Include="Feedbacks\MMChannel.cs" />
+    <Compile Include="Feedbacks\MMChannelData.cs" />
+    <Compile Include="Feedbacks\MMChannelDataExtensions.cs" />
+    <Compile Include="Feedbacks\MMChannelModes.cs" />
+    <Compile Include="Feedbacks\MMFConditionAttribute.cs" />
+    <Compile Include="Feedbacks\MMFDependencyInstaller.cs" />
+    <Compile Include="Feedbacks\MMFeedback.cs" />
+    <Compile Include="Feedbacks\MMFeedbackBase.cs" />
+    <Compile Include="Feedbacks\MMFeedbackBaseTarget.cs" />
+    <Compile Include="Feedbacks\MMFeedbacks.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksAuthorizations.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksCoroutine.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksEnabler.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksEvent.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksEvents.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksHelpers.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksInspectorColors.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksSequencer.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMFeedbacksShaker.cs" />
+    <Compile Include="Feedbacks\MMFeedbackStaticMethods.cs" />
+    <Compile Include="Feedbacks\MMFeedbackTargetAcquisition.cs" />
+    <Compile Include="Feedbacks\MMFeedbackTiming.cs" />
+    <Compile Include="Feedbacks\MMFEnumConditionAttribute.cs" />
+    <Compile Include="Feedbacks\MMFHiddenAttribute.cs" />
+    <Compile Include="Feedbacks\MMFHiddenPropertiesAttribute.cs" />
+    <Compile Include="Feedbacks\MMFInformationAttribute.cs" />
+    <Compile Include="Feedbacks\MMFInspectorButtonAttribute.cs" />
+    <Compile Include="Feedbacks\MMFInspectorGroupAttribute.cs" />
+    <Compile Include="Feedbacks\MMFlash.cs" />
+    <Compile Include="Feedbacks\MMFlashDebugSettings.cs" />
+    <Compile Include="Feedbacks\MMFlashEvent.cs" />
+    <Compile Include="Feedbacks\MMFloatingText.cs" />
+    <Compile Include="Feedbacks\MMFloatingTextMeshPro.cs" />
+    <Compile Include="Feedbacks\MMFloatingTextSpawner.cs" />
+    <Compile Include="Feedbacks\MMFloatingTextSpawnEvent.cs" />
+    <Compile Include="Feedbacks\MMFReadOnlyAttribute.cs" />
+    <Compile Include="Feedbacks\MMFreezeFrameEvent.cs" />
+    <Compile Include="Feedbacks\MMFVectorAttribute.cs" />
+    <Compile Include="Feedbacks\MMF_Animation.cs" />
+    <Compile Include="Feedbacks\MMF_AnimationCrossfade.cs" />
+    <Compile Include="Feedbacks\MMF_AnimatorSpeed.cs" />
+    <Compile Include="Feedbacks\MMF_AudioFilterDistortion.cs" />
+    <Compile Include="Feedbacks\MMF_AudioFilterEcho.cs" />
+    <Compile Include="Feedbacks\MMF_AudioFilterHighPass.cs" />
+    <Compile Include="Feedbacks\MMF_AudioFilterLowPass.cs" />
+    <Compile Include="Feedbacks\MMF_AudioFilterReverb.cs" />
+    <Compile Include="Feedbacks\MMF_AudioMixerSnapshotTransition.cs" />
+    <Compile Include="Feedbacks\MMF_AudioSource.cs" />
+    <Compile Include="Feedbacks\MMF_AudioSourcePitch.cs" />
+    <Compile Include="Feedbacks\MMF_AudioSourceStereoPan.cs" />
+    <Compile Include="Feedbacks\MMF_AudioSourceVolume.cs" />
+    <Compile Include="Feedbacks\MMF_Blink.cs" />
+    <Compile Include="Feedbacks\MMF_Broadcast.cs" />
+    <Compile Include="Feedbacks\MMF_BroadcastProxy.cs" />
+    <Compile Include="Feedbacks\MMF_Button.cs" />
+    <Compile Include="Feedbacks\MMF_CameraClippingPlanes.cs" />
+    <Compile Include="Feedbacks\MMF_CameraFieldOfView.cs" />
+    <Compile Include="Feedbacks\MMF_CameraOrthographicSize.cs" />
+    <Compile Include="Feedbacks\MMF_CameraShake.cs" />
+    <Compile Include="Feedbacks\MMF_CameraZoom.cs" />
+    <Compile Include="Feedbacks\MMF_CanvasGroup.cs" />
+    <Compile Include="Feedbacks\MMF_CanvasGroupBlocksRaycasts.cs" />
+    <Compile Include="Feedbacks\MMF_Collider.cs" />
+    <Compile Include="Feedbacks\MMF_Collider2D.cs" />
+    <Compile Include="Feedbacks\MMF_DebugComment.cs" />
+    <Compile Include="Feedbacks\MMF_DebugLBreak.cs" />
+    <Compile Include="Feedbacks\MMF_DebugLog.cs" />
+    <Compile Include="Feedbacks\MMF_DestinationTransform.cs" />
+    <Compile Include="Feedbacks\MMF_Destroy.cs" />
+    <Compile Include="Feedbacks\MMF_Enable.cs" />
+    <Compile Include="Feedbacks\MMF_Events.cs" />
+    <Compile Include="Feedbacks\MMF_Fade.cs" />
+    <Compile Include="Feedbacks\MMF_Feedback.cs" />
+    <Compile Include="Feedbacks\MMF_FeedbackBase.cs" />
+    <Compile Include="Feedbacks\MMF_FeedbackBaseTarget.cs" />
+    <Compile Include="Feedbacks\MMF_Feedbacks.cs" />
+    <Compile Include="Feedbacks\MMF_FieldInfo.cs" />
+    <Compile Include="Feedbacks\MMF_Flash.cs" />
+    <Compile Include="Feedbacks\MMF_Flicker.cs" />
+    <Compile Include="Feedbacks\MMF_FloatController.cs" />
+    <Compile Include="Feedbacks\MMF_FloatingText.cs" />
+    <Compile Include="Feedbacks\MMF_Fog.cs" />
+    <Compile Include="Feedbacks\MMF_FreezeFrame.cs" />
+    <Compile Include="Feedbacks\MMF_Graphic.cs" />
+    <Compile Include="Feedbacks\MMF_GraphicCrossFade.cs" />
+    <Compile Include="Feedbacks\MMF_HoldingPause.cs" />
+    <Compile Include="Feedbacks\MMF_Image.cs" />
+    <Compile Include="Feedbacks\MMF_ImageAlpha.cs" />
+    <Compile Include="Feedbacks\MMF_ImageFill.cs" />
+    <Compile Include="Feedbacks\MMF_ImageMaterial.cs" />
+    <Compile Include="Feedbacks\MMF_ImageRaycastTarget.cs" />
+    <Compile Include="Feedbacks\MMF_ImageTextureOffset.cs" />
+    <Compile Include="Feedbacks\MMF_ImageTextureScale.cs" />
+    <Compile Include="Feedbacks\MMF_InstantiateObject.cs" />
+    <Compile Include="Feedbacks\MMF_Light.cs" />
+    <Compile Include="Feedbacks\MMF_LoadScene.cs" />
+    <Compile Include="Feedbacks\MMF_LookAt.cs" />
+    <Compile Include="Feedbacks\MMF_Looper.cs" />
+    <Compile Include="Feedbacks\MMF_LooperStart.cs" />
+    <Compile Include="Feedbacks\MMF_Material.cs" />
+    <Compile Include="Feedbacks\MMF_MaterialSetProperty.cs" />
+    <Compile Include="Feedbacks\MMF_MMGameEvent.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerAllSoundsControl.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerSaveLoad.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerSound.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerSoundControl.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerSoundData.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerSoundFade.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerTrackControl.cs" />
+    <Compile Include="Feedbacks\MMF_MMSoundManagerTrackFade.cs" />
+    <Compile Include="Feedbacks\MMF_Particles.cs" />
+    <Compile Include="Feedbacks\MMF_ParticlesInstantiation.cs" />
+    <Compile Include="Feedbacks\MMF_Pause.cs" />
+    <Compile Include="Feedbacks\MMF_Player.cs" />
+    <Compile Include="Feedbacks\MMF_PlayerChain.cs" />
+    <Compile Include="Feedbacks\MMF_PlayerControl.cs" />
+    <Compile Include="Feedbacks\MMF_PlayerDebugInput.cs" />
+    <Compile Include="Feedbacks\MMF_PlayerEnabler.cs" />
+    <Compile Include="Feedbacks\MMF_Playlist.cs" />
+    <Compile Include="Feedbacks\MMF_Position.cs" />
+    <Compile Include="Feedbacks\MMF_PositionShake.cs" />
+    <Compile Include="Feedbacks\MMF_PositionSpring.cs" />
+    <Compile Include="Feedbacks\MMF_PPMovingFilter.cs" />
+    <Compile Include="Feedbacks\MMF_Property.cs" />
+    <Compile Include="Feedbacks\MMF_RadioSignal.cs" />
+    <Compile Include="Feedbacks\MMF_RectTransformAnchor.cs" />
+    <Compile Include="Feedbacks\MMF_RectTransformOffset.cs" />
+    <Compile Include="Feedbacks\MMF_RectTransformPivot.cs" />
+    <Compile Include="Feedbacks\MMF_RectTransformSizeDelta.cs" />
+    <Compile Include="Feedbacks\MMF_ReferenceHolder.cs" />
+    <Compile Include="Feedbacks\MMF_Rigidbody.cs" />
+    <Compile Include="Feedbacks\MMF_Rigidbody2D.cs" />
+    <Compile Include="Feedbacks\MMF_RotatePositionAround.cs" />
+    <Compile Include="Feedbacks\MMF_Rotation.cs" />
+    <Compile Include="Feedbacks\MMF_RotationShake.cs" />
+    <Compile Include="Feedbacks\MMF_RotationSpring.cs" />
+    <Compile Include="Feedbacks\MMF_Scale.cs" />
+    <Compile Include="Feedbacks\MMF_ScaleShake.cs" />
+    <Compile Include="Feedbacks\MMF_ScaleSpring.cs" />
+    <Compile Include="Feedbacks\MMF_SetActive.cs" />
+    <Compile Include="Feedbacks\MMF_SetParent.cs" />
+    <Compile Include="Feedbacks\MMF_ShaderController.cs" />
+    <Compile Include="Feedbacks\MMF_ShaderGlobal.cs" />
+    <Compile Include="Feedbacks\MMF_Skybox.cs" />
+    <Compile Include="Feedbacks\MMF_Sound.cs" />
+    <Compile Include="Feedbacks\MMF_SpringColor.cs" />
+    <Compile Include="Feedbacks\MMF_SpringFloat.cs" />
+    <Compile Include="Feedbacks\MMF_SpringVector2.cs" />
+    <Compile Include="Feedbacks\MMF_SpringVector3.cs" />
+    <Compile Include="Feedbacks\MMF_SpringVector4.cs" />
+    <Compile Include="Feedbacks\MMF_SpriteRenderer.cs" />
+    <Compile Include="Feedbacks\MMF_SquashAndStretch.cs" />
+    <Compile Include="Feedbacks\MMF_SquashAndStretchSpring.cs" />
+    <Compile Include="Feedbacks\MMF_Text.cs" />
+    <Compile Include="Feedbacks\MMF_TextColor.cs" />
+    <Compile Include="Feedbacks\MMF_TextFontSize.cs" />
+    <Compile Include="Feedbacks\MMF_TextureOffset.cs" />
+    <Compile Include="Feedbacks\MMF_TextureScale.cs" />
+    <Compile Include="Feedbacks\MMF_TimescaleModifier.cs" />
+    <Compile Include="Feedbacks\MMF_TMPAlpha.cs" />
+    <Compile Include="Feedbacks\MMF_TMPCharacterSpacing.cs" />
+    <Compile Include="Feedbacks\MMF_TMPColor.cs" />
+    <Compile Include="Feedbacks\MMF_TMPCountTo.cs" />
+    <Compile Include="Feedbacks\MMF_TMPCountToLong.cs" />
+    <Compile Include="Feedbacks\MMF_TMPDilate.cs" />
+    <Compile Include="Feedbacks\MMF_TMPFontSize.cs" />
+    <Compile Include="Feedbacks\MMF_TMPLineSpacing.cs" />
+    <Compile Include="Feedbacks\MMF_TMPOutlineColor.cs" />
+    <Compile Include="Feedbacks\MMF_TMPOutlineWidth.cs" />
+    <Compile Include="Feedbacks\MMF_TMPParagraphSpacing.cs" />
+    <Compile Include="Feedbacks\MMF_TMPSoftness.cs" />
+    <Compile Include="Feedbacks\MMF_TMPText.cs" />
+    <Compile Include="Feedbacks\MMF_TMPTextReveal.cs" />
+    <Compile Include="Feedbacks\MMF_TMPWordSpacing.cs" />
+    <Compile Include="Feedbacks\MMF_UnloadScene.cs" />
+    <Compile Include="Feedbacks\MMF_VideoPlayer.cs" />
+    <Compile Include="Feedbacks\MMF_Wiggle.cs" />
+    <Compile Include="Feedbacks\MMInputSequenceRecorder.cs" />
+    <Compile Include="Feedbacks\MMLight2DShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMLight2DShaker_URP.cs" />
+    <Compile Include="Feedbacks\MMLightShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMLightShaker.cs" />
+    <Compile Include="Feedbacks\MMLookAtShaker.cs" />
+    <Compile Include="Feedbacks\MMMiniObjectPool.cs" />
+    <Compile Include="Feedbacks\MMMiniObjectPooler.cs" />
+    <Compile Include="Feedbacks\MMMiniPoolableObject.cs" />
+    <Compile Include="Feedbacks\MMPositionShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMPositionShaker.cs" />
+    <Compile Include="Feedbacks\MMRotationShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMRotationShaker.cs" />
+    <Compile Include="Feedbacks\MMScaleShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMScaleShaker.cs" />
+    <Compile Include="Feedbacks\MMSequence.cs" />
+    <Compile Include="Feedbacks\MMSequenceList.cs" />
+    <Compile Include="Feedbacks\MMSequenceNote.cs" />
+    <Compile Include="Feedbacks\MMSequencer.cs" />
+    <Compile Include="Feedbacks\MMSequenceTrack.cs" />
+    <Compile Include="Feedbacks\MMSequenceTrackStates.cs" />
+    <Compile Include="Feedbacks\MMSetFeedbackRangeCenterEvent.cs" />
+    <Compile Include="Feedbacks\MMShaker.cs" />
+    <Compile Include="Feedbacks\MMSoundSequencer.cs" />
+    <Compile Include="Feedbacks\MMSpringAnimatorSpeed.cs" />
+    <Compile Include="Feedbacks\MMSpringAudioSourcePitch.cs" />
+    <Compile Include="Feedbacks\MMSpringAudioSourceVolume.cs" />
+    <Compile Include="Feedbacks\MMSpringBloomIntensity_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringCameraFieldOfView.cs" />
+    <Compile Include="Feedbacks\MMSpringCameraOrthographicSize.cs" />
+    <Compile Include="Feedbacks\MMSpringChromaticAberrationIntensity_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringClampSettings.cs" />
+    <Compile Include="Feedbacks\MMSpringColor.cs" />
+    <Compile Include="Feedbacks\MMSpringColorAdjustmentsContrast_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringColorAdjustmentsHueShift_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringColorAdjustmentsSaturation_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringColorComponent.cs" />
+    <Compile Include="Feedbacks\MMSpringColorEvent.cs" />
+    <Compile Include="Feedbacks\MMSpringComponentBase.cs" />
+    <Compile Include="Feedbacks\MMSpringDebug.cs" />
+    <Compile Include="Feedbacks\MMSpringDefinition.cs" />
+    <Compile Include="Feedbacks\MMSpringDepthOfFieldFocalLength_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringFloat.cs" />
+    <Compile Include="Feedbacks\MMSpringFloatComponent.cs" />
+    <Compile Include="Feedbacks\MMSpringFloatEvent.cs" />
+    <Compile Include="Feedbacks\MMSpringImageAlpha.cs" />
+    <Compile Include="Feedbacks\MMSpringImageColor.cs" />
+    <Compile Include="Feedbacks\MMSpringImageFillAmount.cs" />
+    <Compile Include="Feedbacks\MMSpringLensDistortionIntensity_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringLightColor.cs" />
+    <Compile Include="Feedbacks\MMSpringLightIntensity.cs" />
+    <Compile Include="Feedbacks\MMSpringLightRange.cs" />
+    <Compile Include="Feedbacks\MMSpringMMTimeScale.cs" />
+    <Compile Include="Feedbacks\MMSpringMotionBlurIntensity_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringPaniniProjectionDistance_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringPosition.cs" />
+    <Compile Include="Feedbacks\MMSpringRectTransformPosition.cs" />
+    <Compile Include="Feedbacks\MMSpringRectTransformSizeDelta.cs" />
+    <Compile Include="Feedbacks\MMSpringRotation.cs" />
+    <Compile Include="Feedbacks\MMSpringRotationAround.cs" />
+    <Compile Include="Feedbacks\MMSpringScale.cs" />
+    <Compile Include="Feedbacks\MMSpringShaderController.cs" />
+    <Compile Include="Feedbacks\MMSpringSpriteColor.cs" />
+    <Compile Include="Feedbacks\MMSpringSquashAndStretch.cs" />
+    <Compile Include="Feedbacks\MMSpringTextureOffset.cs" />
+    <Compile Include="Feedbacks\MMSpringTextureScale.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPAlpha.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPCharacterSpacing.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPDilate.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPFontSize.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPLineSpacing.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPSoftness.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPTextColor.cs" />
+    <Compile Include="Feedbacks\MMSpringTMPWordSpacing.cs" />
+    <Compile Include="Feedbacks\MMSpringVector2.cs" />
+    <Compile Include="Feedbacks\MMSpringVector2Component.cs" />
+    <Compile Include="Feedbacks\MMSpringVector2Event.cs" />
+    <Compile Include="Feedbacks\MMSpringVector3.cs" />
+    <Compile Include="Feedbacks\MMSpringVector3Component.cs" />
+    <Compile Include="Feedbacks\MMSpringVector3Event.cs" />
+    <Compile Include="Feedbacks\MMSpringVector4.2.cs" />
+    <Compile Include="Feedbacks\MMSpringVector4.cs" />
+    <Compile Include="Feedbacks\MMSpringVector4Event.cs" />
+    <Compile Include="Feedbacks\MMSpringVignetteCenter_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringVignetteColor_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringVignetteIntensity_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringWhiteBalanceTemperature_URP.cs" />
+    <Compile Include="Feedbacks\MMSpringWhiteBalanceTint_URP.cs" />
+    <Compile Include="Feedbacks\MMSpriteRendererShakeEvent.cs" />
+    <Compile Include="Feedbacks\MMSpriteRendererShaker.cs" />
+    <Compile Include="Feedbacks\MMTimeManager.cs" />
+    <Compile Include="Feedbacks\MMTimeScaleEvent.cs" />
+    <Compile Include="Feedbacks\MMTimeScaleLerpModes.cs" />
+    <Compile Include="Feedbacks\MMTimeScaleMethods.cs" />
+    <Compile Include="Feedbacks\MMWiggle.cs" />
+    <Compile Include="Feedbacks\SpringCommands.cs" />
+    <Compile Include="Feedbacks\TimescaleModes.cs" />
+    <Compile Include="Feedbacks\TimeScaleProperties.cs" />
+    <Compile Include="Feedbacks\TmpAttribute.cs" />
+    <Compile Include="Feedbacks\WiggleProperties.cs" />
+    <Compile Include="Feedbacks\WiggleTypes.cs" />
+    <Compile Include="Feel\Barbarian.cs" />
+    <Compile Include="Feel\BarbarianEnemy.cs" />
+    <Compile Include="Feel\Blob.cs" />
+    <Compile Include="Feel\BounceFeedbacks.cs" />
+    <Compile Include="Feel\BounceManager.cs" />
+    <Compile Include="Feel\BounceRocks.cs" />
+    <Compile Include="Feel\Duck.cs" />
+    <Compile Include="Feel\Falcon.cs" />
+    <Compile Include="Feel\FeelBrass.cs" />
+    <Compile Include="Feel\FeelBrassGroundGenerator.cs" />
+    <Compile Include="Feel\FeelCardsUIStackButton.cs" />
+    <Compile Include="Feel\FeelDemosInputHelper.cs" />
+    <Compile Include="Feel\FeelDemosInstructions.cs" />
+    <Compile Include="Feel\FeelDemosNextDemoButtonInput.cs" />
+    <Compile Include="Feel\FeelSpringsAdvancedFloatDemo.cs" />
+    <Compile Include="Feel\FeelSpringsCellMovementDemo.cs" />
+    <Compile Include="Feel\FeelSpringsComparisonDemo.cs" />
+    <Compile Include="Feel\FeelSpringsDemoManager.cs" />
+    <Compile Include="Feel\FeelSpringsDemoSlider.cs" />
+    <Compile Include="Feel\FeelSpringsFloatDemo.cs" />
+    <Compile Include="Feel\FeelSpringsVector2Demo.cs" />
+    <Compile Include="Feel\FeelSpringsVector3Demo.cs" />
+    <Compile Include="Feel\FeelSquashAndStretchCarController.cs" />
+    <Compile Include="Feel\GettingStartedTutorialHeroReference.cs" />
+    <Compile Include="Feel\LettersDemoManager.cs" />
+    <Compile Include="Feel\MMSequencerDemoManager.cs" />
+    <Compile Include="Feel\PlaylistDemo.cs" />
+    <Compile Include="Feel\Snake.cs" />
+    <Compile Include="Feel\SnakeBodyPart.cs" />
+    <Compile Include="Feel\SnakeFood.cs" />
+    <Compile Include="Feel\SnakeFoodSpawner.cs" />
+    <Compile Include="Feel\Strike.cs" />
+    <Compile Include="Feel\StrikeBall.cs" />
+    <Compile Include="Feel\StrikePin.cs" />
+    <Compile Include="Feel\Tactical.cs" />
+    <Compile Include="Feel\Wheel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\AchievementTypes.cs" />
+    <Compile Include="Tools\AIAction.cs" />
+    <Compile Include="Tools\AIActionsList.cs" />
+    <Compile Include="Tools\AIBrain.cs" />
+    <Compile Include="Tools\AIDecision.cs" />
+    <Compile Include="Tools\AIState.cs" />
+    <Compile Include="Tools\AIStateEvent.cs" />
+    <Compile Include="Tools\AITransition.cs" />
+    <Compile Include="Tools\AITransitionsList.cs" />
+    <Compile Include="Tools\AxisEvent.cs" />
+    <Compile Include="Tools\Beat.cs" />
+    <Compile Include="Tools\DictionaryStringSceneData.cs" />
+    <Compile Include="Tools\DictionaryStringString.cs" />
+    <Compile Include="Tools\EventRegister.cs" />
+    <Compile Include="Tools\FloatController.cs" />
+    <Compile Include="Tools\FogSettings.cs" />
+    <Compile Include="Tools\GameObjectExtensions.cs" />
+    <Compile Include="Tools\IMMPersistent.cs" />
+    <Compile Include="Tools\IMMSaveLoadManagerMethod.cs" />
+    <Compile Include="Tools\JoystickEvent.cs" />
+    <Compile Include="Tools\JoystickFloatEvent.cs" />
+    <Compile Include="Tools\LayermaskExtensions.cs" />
+    <Compile Include="Tools\LightController.cs" />
+    <Compile Include="Tools\ListExtensions.cs" />
+    <Compile Include="Tools\MMAchievement.cs" />
+    <Compile Include="Tools\MMAchievementChangedEvent.cs" />
+    <Compile Include="Tools\MMAchievementDisplayer.cs" />
+    <Compile Include="Tools\MMAchievementDisplayItem.cs" />
+    <Compile Include="Tools\MMAchievementList.cs" />
+    <Compile Include="Tools\MMAchievementManager.cs" />
+    <Compile Include="Tools\MMAchievementRules.cs" />
+    <Compile Include="Tools\MMAchievementUnlockedEvent.cs" />
+    <Compile Include="Tools\MMActivationOnStart.cs" />
+    <Compile Include="Tools\MMAdditiveSceneLoadingManager.cs" />
+    <Compile Include="Tools\MMAdditiveSceneLoadingManagerSettings.cs" />
+    <Compile Include="Tools\MMAim.cs" />
+    <Compile Include="Tools\MMAnimationCurveGenerator.cs" />
+    <Compile Include="Tools\MMAnimationModifier.cs" />
+    <Compile Include="Tools\MMAnimationParameter.cs" />
+    <Compile Include="Tools\MMAnimatorExtensions.cs" />
+    <Compile Include="Tools\MMAnimatorMirror.cs" />
+    <Compile Include="Tools\MMApplicationPlatformActivation.cs" />
+    <Compile Include="Tools\MMApplicationQuit.cs" />
+    <Compile Include="Tools\MMArray.cs" />
+    <Compile Include="Tools\MMArrayExtensions.cs" />
+    <Compile Include="Tools\MMAspectRatioSafeZones.cs" />
+    <Compile Include="Tools\MMAudioAnalyzer.cs" />
+    <Compile Include="Tools\MMAudioEvents.cs" />
+    <Compile Include="Tools\MMAudioListener.cs" />
+    <Compile Include="Tools\MMAutoDestroyParticleSystem.cs" />
+    <Compile Include="Tools\MMAutoExecution.cs" />
+    <Compile Include="Tools\MMAutoExecutionItem.cs" />
+    <Compile Include="Tools\MMAutoInputModule.cs" />
+    <Compile Include="Tools\MMAutoOrderInLayer.cs" />
+    <Compile Include="Tools\MMAutoRotate.cs" />
+    <Compile Include="Tools\MMBackgroundAttributeColor.cs" />
+    <Compile Include="Tools\MMBackgroundColorAttribute.cs" />
+    <Compile Include="Tools\MMBeatEvent.cs" />
+    <Compile Include="Tools\MMBezierLineRenderer.cs" />
+    <Compile Include="Tools\MMBillboard.cs" />
+    <Compile Include="Tools\MMBoundsExtensions.cs" />
+    <Compile Include="Tools\MMCameraAspectRatio.cs" />
+    <Compile Include="Tools\MMCameraExtensions.cs" />
+    <Compile Include="Tools\MMCameraFog.cs" />
+    <Compile Include="Tools\MMChangeFogColor.cs" />
+    <Compile Include="Tools\MMCinemachineZone.cs" />
+    <Compile Include="Tools\MMCinemachineZone2D.cs" />
+    <Compile Include="Tools\MMCinemachineZone3D.cs" />
+    <Compile Include="Tools\MMCircularList.cs" />
+    <Compile Include="Tools\MMColorAttribute.cs" />
+    <Compile Include="Tools\MMColorExtensions.cs" />
+    <Compile Include="Tools\MMColors.cs" />
+    <Compile Include="Tools\MMConditionalActivation.cs" />
+    <Compile Include="Tools\MMConditionAttribute.cs" />
+    <Compile Include="Tools\MMConeOfVision.cs" />
+    <Compile Include="Tools\MMConeOfVision2D.cs" />
+    <Compile Include="Tools\MMConsole.cs" />
+    <Compile Include="Tools\MMControlsTestInputManager.cs" />
+    <Compile Include="Tools\MMCooldown.cs" />
+    <Compile Include="Tools\MMCoroutine.cs" />
+    <Compile Include="Tools\MMCountdown.cs" />
+    <Compile Include="Tools\MMCursorVisible.cs" />
+    <Compile Include="Tools\MMDButtonPressedEvent.cs" />
+    <Compile Include="Tools\MMDCheckboxFalseEvent.cs" />
+    <Compile Include="Tools\MMDCheckboxPressedEvent.cs" />
+    <Compile Include="Tools\MMDCheckboxTrueEvent.cs" />
+    <Compile Include="Tools\MMDebug.cs" />
+    <Compile Include="Tools\MMDebugController.cs" />
+    <Compile Include="Tools\MMDebugLogCommandArgumentCountAttribute.cs" />
+    <Compile Include="Tools\MMDebugLogCommandAttribute.cs" />
+    <Compile Include="Tools\MMDebugMenu.cs" />
+    <Compile Include="Tools\MMDebugMenuButtonEvent.cs" />
+    <Compile Include="Tools\MMDebugMenuButtonEventListener.cs" />
+    <Compile Include="Tools\MMDebugMenuCheckboxEvent.cs" />
+    <Compile Include="Tools\MMDebugMenuCheckboxEventListener.cs" />
+    <Compile Include="Tools\MMDebugMenuChoiceEntry.cs" />
+    <Compile Include="Tools\MMDebugMenuCommands.cs" />
+    <Compile Include="Tools\MMDebugMenuData.cs" />
+    <Compile Include="Tools\MMDebugMenuDebugTab.cs" />
+    <Compile Include="Tools\MMDebugMenuItem.cs" />
+    <Compile Include="Tools\MMDebugMenuItemButton.cs" />
+    <Compile Include="Tools\MMDebugMenuItemCheckbox.cs" />
+    <Compile Include="Tools\MMDebugMenuItemChoices.cs" />
+    <Compile Include="Tools\MMDebugMenuItemList.cs" />
+    <Compile Include="Tools\MMDebugMenuItemSlider.cs" />
+    <Compile Include="Tools\MMDebugMenuItemText.cs" />
+    <Compile Include="Tools\MMDebugMenuItemTitle.cs" />
+    <Compile Include="Tools\MMDebugMenuItemValue.cs" />
+    <Compile Include="Tools\MMDebugMenuRadioButton.cs" />
+    <Compile Include="Tools\MMDebugMenuSliderEvent.cs" />
+    <Compile Include="Tools\MMDebugMenuSliderEventListener.cs" />
+    <Compile Include="Tools\MMDebugMenuSpriteReplace.cs" />
+    <Compile Include="Tools\MMDebugMenuSwitch.cs" />
+    <Compile Include="Tools\MMDebugMenuTab.cs" />
+    <Compile Include="Tools\MMDebugMenuTabContents.cs" />
+    <Compile Include="Tools\MMDebugMenuTabData.cs" />
+    <Compile Include="Tools\MMDebugMenuTabManager.cs" />
+    <Compile Include="Tools\MMDebugMenuTestClass.cs" />
+    <Compile Include="Tools\MMDebugOnScreenConsole.cs" />
+    <Compile Include="Tools\MMDebugTouchDisplay.cs" />
+    <Compile Include="Tools\MMDelayParticles.cs" />
+    <Compile Include="Tools\MMDictionaryExtensions.cs" />
+    <Compile Include="Tools\MMDontDestroyOnLoad.cs" />
+    <Compile Include="Tools\MMDropdownAttribute.cs" />
+    <Compile Include="Tools\MMDSliderValueChangedEvent.cs" />
+    <Compile Include="Tools\MMEmmiterReceiver.cs" />
+    <Compile Include="Tools\MMEnumConditionAttribute.cs" />
+    <Compile Include="Tools\MMEventListener.cs" />
+    <Compile Include="Tools\MMEventListenerBase.cs" />
+    <Compile Include="Tools\MMEventListenerWrapper.cs" />
+    <Compile Include="Tools\MMEventManager.cs" />
+    <Compile Include="Tools\MMExecutionOrderAttribute.cs" />
+    <Compile Include="Tools\MMFaceDirection.cs" />
+    <Compile Include="Tools\MMFade.cs" />
+    <Compile Include="Tools\MMFadeEvent.cs" />
+    <Compile Include="Tools\MMFadeInEvent.cs" />
+    <Compile Include="Tools\MMFadeOutEvent.cs" />
+    <Compile Include="Tools\MMFader.cs" />
+    <Compile Include="Tools\MMFaderDirectional.cs" />
+    <Compile Include="Tools\MMFaderRound.cs" />
+    <Compile Include="Tools\MMFadeStopEvent.cs" />
+    <Compile Include="Tools\MMFloatExtensions.cs" />
+    <Compile Include="Tools\MMFollowTarget.cs" />
+    <Compile Include="Tools\MMFPSCounter.cs" />
+    <Compile Include="Tools\MMFPSUnlock.cs" />
+    <Compile Include="Tools\MMGameEvent.cs" />
+    <Compile Include="Tools\MMGameEventListener.cs" />
+    <Compile Include="Tools\MMGeometry.cs" />
+    <Compile Include="Tools\MMGetFocusOnEnable.cs" />
+    <Compile Include="Tools\MMGhostCamera.cs" />
+    <Compile Include="Tools\MMGizmo.cs" />
+    <Compile Include="Tools\MMGridGenerator.cs" />
+    <Compile Include="Tools\MMGridGeneratorFull.cs" />
+    <Compile Include="Tools\MMGridGeneratorPath.cs" />
+    <Compile Include="Tools\MMGridGeneratorPerlinNoise.cs" />
+    <Compile Include="Tools\MMGridGeneratorPerlinNoiseGround.cs" />
+    <Compile Include="Tools\MMGridGeneratorRandom.cs" />
+    <Compile Include="Tools\MMGridGeneratorRandomWalk.cs" />
+    <Compile Include="Tools\MMGridGeneratorRandomWalkAvoider.cs" />
+    <Compile Include="Tools\MMGridGeneratorRandomWalkGround.cs" />
+    <Compile Include="Tools\MMGUI.cs" />
+    <Compile Include="Tools\MMGyroCam.cs" />
+    <Compile Include="Tools\MMGyroParallax.cs" />
+    <Compile Include="Tools\MMGyroscope.cs" />
+    <Compile Include="Tools\MMHealthBar.cs" />
+    <Compile Include="Tools\MMHelpers.cs" />
+    <Compile Include="Tools\MMHiddenAttribute.cs" />
+    <Compile Include="Tools\MMHiddenPropertiesAttribute.cs" />
+    <Compile Include="Tools\MMImage.cs" />
+    <Compile Include="Tools\MMInformationAttribute.cs" />
+    <Compile Include="Tools\MMInput.cs" />
+    <Compile Include="Tools\MMInputExecution.cs" />
+    <Compile Include="Tools\MMInputExecutionBinding.cs" />
+    <Compile Include="Tools\MMInspectorButtonAttribute.cs" />
+    <Compile Include="Tools\MMInspectorButtonBarAttribute.cs" />
+    <Compile Include="Tools\MMInspectorGroupAttribute.cs" />
+    <Compile Include="Tools\MMInterval.cs" />
+    <Compile Include="Tools\MMIStateMachine.cs" />
+    <Compile Include="Tools\MMLayer.cs" />
+    <Compile Include="Tools\MMLayers.cs" />
+    <Compile Include="Tools\MMLineRendererCircle.cs" />
+    <Compile Include="Tools\MMLineRendererDriver.cs" />
+    <Compile Include="Tools\MMLoadScene.cs" />
+    <Compile Include="Tools\MMLoot.cs" />
+    <Compile Include="Tools\MMLootFloat.cs" />
+    <Compile Include="Tools\MMLootGameObject.cs" />
+    <Compile Include="Tools\MMLootString.cs" />
+    <Compile Include="Tools\MMLootTable.cs" />
+    <Compile Include="Tools\MMLootTableFloat.cs" />
+    <Compile Include="Tools\MMLootTableGameObject.cs" />
+    <Compile Include="Tools\MMLootTableGameObjectSO.cs" />
+    <Compile Include="Tools\MMLootTableString.cs" />
+    <Compile Include="Tools\MMMaths.cs" />
+    <Compile Include="Tools\MMMonoBehaviour.cs" />
+    <Compile Include="Tools\MMMovement.cs" />
+    <Compile Include="Tools\MMMultipleObjectPooler.cs" />
+    <Compile Include="Tools\MMMultipleObjectPoolerObject.cs" />
+    <Compile Include="Tools\MMNavMeshAreaMaskAttribute.cs" />
+    <Compile Include="Tools\MMObjectBounds.cs" />
+    <Compile Include="Tools\MMObjectPool.cs" />
+    <Compile Include="Tools\MMObjectPooler.cs" />
+    <Compile Include="Tools\MMObservable.cs" />
+    <Compile Include="Tools\MMObservableDemoObserver.cs" />
+    <Compile Include="Tools\MMObservableDemoObserverAutoSleep.cs" />
+    <Compile Include="Tools\MMObservableDemoSubject.cs" />
+    <Compile Include="Tools\MMOffsetAnimation.cs" />
+    <Compile Include="Tools\MMOnMouse.cs" />
+    <Compile Include="Tools\MMOnPointer.cs" />
+    <Compile Include="Tools\MMOpenURL.cs" />
+    <Compile Include="Tools\MMOrbitalCamera.cs" />
+    <Compile Include="Tools\MMPanningTexture.cs" />
+    <Compile Include="Tools\MMParallaxUI.cs" />
+    <Compile Include="Tools\MMParentingOnStart.cs" />
+    <Compile Include="Tools\MMPath.cs" />
+    <Compile Include="Tools\MMPathMovement.cs" />
+    <Compile Include="Tools\MMPathMovementElement.cs" />
+    <Compile Include="Tools\MMPeriodicExecution.cs" />
+    <Compile Include="Tools\MMPersistenceEvent.cs" />
+    <Compile Include="Tools\MMPersistenceEventType.cs" />
+    <Compile Include="Tools\MMPersistenceManager.cs" />
+    <Compile Include="Tools\MMPersistenceManagerData.cs" />
+    <Compile Include="Tools\MMPersistenceSceneData.cs" />
+    <Compile Include="Tools\MMPersistent.cs" />
+    <Compile Include="Tools\MMPersistentBase.cs" />
+    <Compile Include="Tools\MMPersistentHumbleSingleton.cs" />
+    <Compile Include="Tools\MMPersistentSingleton.cs" />
+    <Compile Include="Tools\MMPlatformActivation.cs" />
+    <Compile Include="Tools\MMPlaylist.cs" />
+    <Compile Include="Tools\MMPlaylistChangeEvent.cs" />
+    <Compile Include="Tools\MMPlaylistNewSongStartedEvent.cs" />
+    <Compile Include="Tools\MMPlaylistPauseEvent.cs" />
+    <Compile Include="Tools\MMPlaylistPitchMultiplierEvent.cs" />
+    <Compile Include="Tools\MMPlaylistPlayEvent.cs" />
+    <Compile Include="Tools\MMPlaylistPlayIndexEvent.cs" />
+    <Compile Include="Tools\MMPlaylistPlayNextEvent.cs" />
+    <Compile Include="Tools\MMPlaylistPlayPreviousEvent.cs" />
+    <Compile Include="Tools\MMPlaylistRemote.cs" />
+    <Compile Include="Tools\MMPlaylistSong.cs" />
+    <Compile Include="Tools\MMPlaylistStopEvent.cs" />
+    <Compile Include="Tools\MMPlaylistVolumeMultiplierEvent.cs" />
+    <Compile Include="Tools\MMPlotter.cs" />
+    <Compile Include="Tools\MMPlotterAxis.cs" />
+    <Compile Include="Tools\MMPlotterGenerator.cs" />
+    <Compile Include="Tools\MMPoolableObject.cs" />
+    <Compile Include="Tools\MMPoolingMethods.cs" />
+    <Compile Include="Tools\MMPositionRecorder.cs" />
+    <Compile Include="Tools\MMPossibleSwipeDirections.cs" />
+    <Compile Include="Tools\MMPostProcessingMovingFilter.cs" />
+    <Compile Include="Tools\MMPostProcessingMovingFilterEvent.cs" />
+    <Compile Include="Tools\MMPreventPassingThrough.cs" />
+    <Compile Include="Tools\MMPreventPassingThrough2D.cs" />
+    <Compile Include="Tools\MMPreventPassingThrough3D.cs" />
+    <Compile Include="Tools\MMProgressBar.cs" />
+    <Compile Include="Tools\MMProgressBarDemoAuto.cs" />
+    <Compile Include="Tools\MMProperty.cs" />
+    <Compile Include="Tools\MMPropertyEmitter.cs" />
+    <Compile Include="Tools\MMPropertyLink.cs" />
+    <Compile Include="Tools\MMPropertyLinkBool.cs" />
+    <Compile Include="Tools\MMPropertyLinkColor.cs" />
+    <Compile Include="Tools\MMPropertyLinkFloat.cs" />
+    <Compile Include="Tools\MMPropertyLinkInt.cs" />
+    <Compile Include="Tools\MMPropertyLinkQuaternion.cs" />
+    <Compile Include="Tools\MMPropertyLinkString.cs" />
+    <Compile Include="Tools\MMPropertyLinkVector2.cs" />
+    <Compile Include="Tools\MMPropertyLinkVector3.cs" />
+    <Compile Include="Tools\MMPropertyLinkVector4.cs" />
+    <Compile Include="Tools\MMPropertyPicker.cs" />
+    <Compile Include="Tools\MMPropertyReceiver.cs" />
+    <Compile Include="Tools\MMPSBToUIConverter.cs" />
+    <Compile Include="Tools\MMRadialProgressBar.cs" />
+    <Compile Include="Tools\MMRadioBroadcaster.cs" />
+    <Compile Include="Tools\MMRadioLevelEvent.cs" />
+    <Compile Include="Tools\MMRadioReceiver.cs" />
+    <Compile Include="Tools\MMRadioSignal.cs" />
+    <Compile Include="Tools\MMRadioSignalAudioAnalyzer.cs" />
+    <Compile Include="Tools\MMRadioSignalGenerator.cs" />
+    <Compile Include="Tools\MMRadioSignalGeneratorItem.cs" />
+    <Compile Include="Tools\MMRadioSignalGeneratorItemList.cs" />
+    <Compile Include="Tools\MMRadioSignalOnValueChange.cs" />
+    <Compile Include="Tools\MMRagdoller.cs" />
+    <Compile Include="Tools\MMRagdollerIgnore.cs" />
+    <Compile Include="Tools\MMRandomBoundsInstantiator.cs" />
+    <Compile Include="Tools\MMRandomInstantiator.cs" />
+    <Compile Include="Tools\MMRaycastTarget.cs" />
+    <Compile Include="Tools\MMReadOnlyAttribute.cs" />
+    <Compile Include="Tools\MMReadOnlyWhenPlayingAttribute.cs" />
+    <Compile Include="Tools\MMRectTransformExtensions.cs" />
+    <Compile Include="Tools\MMReferencedScriptableObject.cs" />
+    <Compile Include="Tools\MMReferenceHolder.cs" />
+    <Compile Include="Tools\MMRendererSortingLayer.cs" />
+    <Compile Include="Tools\MMReorderableArray.cs" />
+    <Compile Include="Tools\MMReorderableAttributeAttribute.cs" />
+    <Compile Include="Tools\MMRequiresConstantRepaintAttribute.cs" />
+    <Compile Include="Tools\MMRequiresConstantRepaintOnlyWhenPlayingAttribute.cs" />
+    <Compile Include="Tools\MMRigidbodyCenterOfMass.cs" />
+    <Compile Include="Tools\MMRigidbodyInterface.cs" />
+    <Compile Include="Tools\MMRuntimeParticleControl.cs" />
+    <Compile Include="Tools\MMSaveLoadManager.cs" />
+    <Compile Include="Tools\MMSaveLoadManagerEncrypter.cs" />
+    <Compile Include="Tools\MMSaveLoadManagerMethod.cs" />
+    <Compile Include="Tools\MMSaveLoadManagerMethodBinary.cs" />
+    <Compile Include="Tools\MMSaveLoadManagerMethodBinaryEncrypted.cs" />
+    <Compile Include="Tools\MMSaveLoadManagerMethodJson.cs" />
+    <Compile Include="Tools\MMSaveLoadManagerMethodJsonEncrypted.cs" />
+    <Compile Include="Tools\MMSaveLoadManagerMethods.cs" />
+    <Compile Include="Tools\MMSaveLoadTester.cs" />
+    <Compile Include="Tools\MMSaveLoadTestObject.cs" />
+    <Compile Include="Tools\MMScene.cs" />
+    <Compile Include="Tools\MMSceneLoadingAntiSpill.cs" />
+    <Compile Include="Tools\MMSceneLoadingImageProgress.cs" />
+    <Compile Include="Tools\MMSceneLoadingManager.cs" />
+    <Compile Include="Tools\MMSceneLoadingSpeedInterval.cs" />
+    <Compile Include="Tools\MMSceneLoadingTextProgress.cs" />
+    <Compile Include="Tools\MMSceneName.cs" />
+    <Compile Include="Tools\MMSceneRestarter.cs" />
+    <Compile Include="Tools\MMSceneViewIcon.cs" />
+    <Compile Include="Tools\MMScreenshot.cs" />
+    <Compile Include="Tools\MMSelectionBase.cs" />
+    <Compile Include="Tools\MMSerializableDictionary.cs" />
+    <Compile Include="Tools\MMSerializedPropertyExtensions.cs" />
+    <Compile Include="Tools\MMSfxEvent.cs" />
+    <Compile Include="Tools\MMShufflebag.cs" />
+    <Compile Include="Tools\MMSignal.cs" />
+    <Compile Include="Tools\MMSimpleObjectPooler.cs" />
+    <Compile Include="Tools\MMSingleton.cs" />
+    <Compile Include="Tools\MMSliderStep.cs" />
+    <Compile Include="Tools\MMSMPlaylist.cs" />
+    <Compile Include="Tools\MMSMPlaylistManager.cs" />
+    <Compile Include="Tools\MMSMPlaylistSong.cs" />
+    <Compile Include="Tools\MMSoundManager.cs" />
+    <Compile Include="Tools\MMSoundManagerAllSoundsControlEvent.cs" />
+    <Compile Include="Tools\MMSoundManagerAllSoundsControlEventTypes.cs" />
+    <Compile Include="Tools\MMSoundManagerAudioPool.cs" />
+    <Compile Include="Tools\MMSoundManagerEvent.cs" />
+    <Compile Include="Tools\MMSoundManagerEventTypes.cs" />
+    <Compile Include="Tools\MMSoundManagerPlayOptions.cs" />
+    <Compile Include="Tools\MMSoundManagerSettings.cs" />
+    <Compile Include="Tools\MMSoundManagerSettingsSO.cs" />
+    <Compile Include="Tools\MMSoundManagerSound.cs" />
+    <Compile Include="Tools\MMSoundManagerSoundControlEvent.cs" />
+    <Compile Include="Tools\MMSoundManagerSoundControlEventTypes.cs" />
+    <Compile Include="Tools\MMSoundManagerSoundFadeEvent.cs" />
+    <Compile Include="Tools\MMSoundManagerSoundPlayEvent.cs" />
+    <Compile Include="Tools\MMSoundManagerTrackEvent.cs" />
+    <Compile Include="Tools\MMSoundManagerTrackEventTypes.cs" />
+    <Compile Include="Tools\MMSoundManagerTrackFadeEvent.cs" />
+    <Compile Include="Tools\MMSoundManagerTrackVolumeSlider.cs" />
+    <Compile Include="Tools\MMSpawnAround.cs" />
+    <Compile Include="Tools\MMSpawnAroundProperties.cs" />
+    <Compile Include="Tools\MMSpawnAroundTester.cs" />
+    <Compile Include="Tools\MMSpeedTest.cs" />
+    <Compile Include="Tools\MMSpeedTestItem.cs" />
+    <Compile Include="Tools\MMSquashAndStretch.cs" />
+    <Compile Include="Tools\MMStateChangeEvent.cs" />
+    <Compile Include="Tools\MMStateMachine.cs" />
+    <Compile Include="Tools\MMStayInPlace.cs" />
+    <Compile Include="Tools\MMStopMotionAnimation.cs" />
+    <Compile Include="Tools\MMString.cs" />
+    <Compile Include="Tools\MMSwipeEvent.cs" />
+    <Compile Include="Tools\MMSwipeZone.cs" />
+    <Compile Include="Tools\MMTilemap.cs" />
+    <Compile Include="Tools\MMTilemapBoolean.cs" />
+    <Compile Include="Tools\MMTilemapCleaner.cs" />
+    <Compile Include="Tools\MMTilemapGenerator.cs" />
+    <Compile Include="Tools\MMTilemapGeneratorLayer.cs" />
+    <Compile Include="Tools\MMTilemapGeneratorLayerList.cs" />
+    <Compile Include="Tools\MMTilemapGridRenderer.cs" />
+    <Compile Include="Tools\MMTilemapShadow.cs" />
+    <Compile Include="Tools\MMTime.cs" />
+    <Compile Include="Tools\MMTimedActivation.cs" />
+    <Compile Include="Tools\MMTimedDestruction.cs" />
+    <Compile Include="Tools\MMToggleActive.cs" />
+    <Compile Include="Tools\MMTouchAxis.cs" />
+    <Compile Include="Tools\MMTouchButton.cs" />
+    <Compile Include="Tools\MMTouchControls.cs" />
+    <Compile Include="Tools\MMTouchFollowerJoystick.cs" />
+    <Compile Include="Tools\MMTouchJoystick.cs" />
+    <Compile Include="Tools\MMTouchRepositionableJoystick.cs" />
+    <Compile Include="Tools\MMTrailRendererSortingLayer.cs" />
+    <Compile Include="Tools\MMTransformRandomizer.cs" />
+    <Compile Include="Tools\MMTriggerAndCollision.cs" />
+    <Compile Include="Tools\MMTriggerAndCollisionFilter.cs" />
+    <Compile Include="Tools\MMTriggerFilter.cs" />
+    <Compile Include="Tools\MMTween.cs" />
+    <Compile Include="Tools\MMTweenDefinitions.cs" />
+    <Compile Include="Tools\MMTweenDefinitionTypes.cs" />
+    <Compile Include="Tools\MMTweenType.cs" />
+    <Compile Include="Tools\MMTwoSidedUI.cs" />
+    <Compile Include="Tools\MMUIFollowMouse.cs" />
+    <Compile Include="Tools\MMVector2Extensions.cs" />
+    <Compile Include="Tools\MMVector3Extensions.cs" />
+    <Compile Include="Tools\MMVector4Extensions.cs" />
+    <Compile Include="Tools\MMVectorAttribute.cs" />
+    <Compile Include="Tools\MMViewportEdgeTeleporter.cs" />
+    <Compile Include="Tools\MMVisibleParticle.cs" />
+    <Compile Include="Tools\MonoAttribute.cs" />
+    <Compile Include="Tools\PeaksSaver.cs" />
+    <Compile Include="Tools\PlatformBindings.cs" />
+    <Compile Include="Tools\ProgressEvent.cs" />
+    <Compile Include="Tools\RagdollBodyPart.cs" />
+    <Compile Include="Tools\Ratio.cs" />
+    <Compile Include="Tools\RectExtensions.cs" />
+    <Compile Include="Tools\RendererExtensions.cs" />
+    <Compile Include="Tools\ScrollRectExtensions.cs" />
+    <Compile Include="Tools\SelectionBase.cs" />
+    <Compile Include="Tools\SerializedMMAchievement.cs" />
+    <Compile Include="Tools\SerializedMMAchievementManager.cs" />
+    <Compile Include="Tools\ShaderController.cs" />
+    <Compile Include="Tools\SwipeEvent.cs" />
+    <Compile Include="Tools\TransformController.cs" />
+    <Compile Include="Tools\TransformExtensions.cs" />
+    <Compile Include="Tools\TriggerAndCollisionMask.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cinemachine\Cinemachine.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD7B}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\netstandard\netstandard.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD8E}</Project>
+      <Name>netstandard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.Core.Runtime\Unity.RenderPipelines.Core.Runtime.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDAD}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.RenderPipelines.Universal.Runtime\Unity.RenderPipelines.Universal.Runtime.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDAE}</Project>
+      <Name>Unity.RenderPipelines.Universal.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDB2}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDB6}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDB8}</Project>
+      <Name>UnityEngine.AudioModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBB}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.GridModule\UnityEngine.GridModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBD}</Project>
+      <Name>UnityEngine.GridModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ImageConversionModule\UnityEngine.ImageConversionModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBE}</Project>
+      <Name>UnityEngine.ImageConversionModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBF}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC0}</Project>
+      <Name>UnityEngine.InputLegacyModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.JSONSerializeModule\UnityEngine.JSONSerializeModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC2}</Project>
+      <Name>UnityEngine.JSONSerializeModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC3}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.Physics2DModule\UnityEngine.Physics2DModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC4}</Project>
+      <Name>UnityEngine.Physics2DModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC5}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ScreenCaptureModule\UnityEngine.ScreenCaptureModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC7}</Project>
+      <Name>UnityEngine.ScreenCaptureModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD0}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TilemapModule\UnityEngine.TilemapModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD1}</Project>
+      <Name>UnityEngine.TilemapModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIElementsModule\UnityEngine.UIElementsModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD3}</Project>
+      <Name>UnityEngine.UIElementsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD4}</Project>
+      <Name>UnityEngine.UIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD2}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.VFXModule\UnityEngine.VFXModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDDA}</Project>
+      <Name>UnityEngine.VFXModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.VideoModule\UnityEngine.VideoModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDDB}</Project>
+      <Name>UnityEngine.VideoModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

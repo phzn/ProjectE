@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4690BD40-D6F6-4A25-AD67-5B6654FCBDCB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnityEngine</RootNamespace>
+    <AssemblyName>UnityEngine.SubsystemsModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IntegratedSubsystem.2.cs" />
+    <Compile Include="IntegratedSubsystem.cs" />
+    <Compile Include="IntegratedSubsystemDescriptor.2.cs" />
+    <Compile Include="IntegratedSubsystemDescriptor.cs" />
+    <Compile Include="Internal_SubsystemDescriptors.cs" />
+    <Compile Include="ISubsystem.cs" />
+    <Compile Include="ISubsystemDescriptor.cs" />
+    <Compile Include="ISubsystemDescriptorImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subsystem.2.cs" />
+    <Compile Include="Subsystem.cs" />
+    <Compile Include="SubsystemBindings.cs" />
+    <Compile Include="SubsystemDescriptor.2.cs" />
+    <Compile Include="SubsystemDescriptor.cs" />
+    <Compile Include="SubsystemDescriptorBindings.cs" />
+    <Compile Include="SubsystemManager.cs" />
+    <Compile Include="SubsystemsImplementation\Extensions\SubsystemDescriptorExtensions.cs" />
+    <Compile Include="SubsystemsImplementation\Extensions\SubsystemExtensions.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemDescriptorStore.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemDescriptorWithProvider.2.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemDescriptorWithProvider.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemProvider.2.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemProvider.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemProxy.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemWithProvider.2.cs" />
+    <Compile Include="SubsystemsImplementation\SubsystemWithProvider.cs" />
+    <Compile Include="Subsystems\ExampleSubsystem.cs" />
+    <Compile Include="Subsystems\ExampleSubsystemDescriptor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\netstandard\netstandard.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD8E}</Project>
+      <Name>netstandard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBB}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.SharedInternalsModule\UnityEngine.SharedInternalsModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC8}</Project>
+      <Name>UnityEngine.SharedInternalsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

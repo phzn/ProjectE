@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4690BD40-D6F6-4A25-AD67-5B6654FCBDB0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unity.Serialization</RootNamespace>
+    <AssemblyName>Unity.Serialization</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binary\BinaryAdapter.cs" />
+    <Compile Include="Binary\BinaryAdapterCollection.cs" />
+    <Compile Include="Binary\BinaryDeserializationContext.cs" />
+    <Compile Include="Binary\BinaryPropertyReader.cs" />
+    <Compile Include="Binary\BinaryPropertyVisitor.cs" />
+    <Compile Include="Binary\BinaryPropertyWriter.cs" />
+    <Compile Include="Binary\BinarySerialization.cs" />
+    <Compile Include="Binary\BinarySerializationContext.cs" />
+    <Compile Include="Binary\BinarySerializationParameters.cs" />
+    <Compile Include="Binary\BinarySerializationState.cs" />
+    <Compile Include="Binary\IBinaryAdapter.2.cs" />
+    <Compile Include="Binary\IBinaryAdapter.cs" />
+    <Compile Include="Binary\IBinaryDeserializationContext.cs" />
+    <Compile Include="Binary\IBinarySerializationContext.cs" />
+    <Compile Include="Binary\IContravariantBinaryAdapter.cs" />
+    <Compile Include="DefaultPropertyBagInitializer.cs" />
+    <Compile Include="DefaultTypeConstruction.cs" />
+    <Compile Include="DirectoryInfoExtensions.cs" />
+    <Compile Include="DontSerializeAttribute.cs" />
+    <Compile Include="FileInfoExtensions.cs" />
+    <Compile Include="FormerNameAttribute.cs" />
+    <Compile Include="IPropertyWrapper.cs" />
+    <Compile Include="ISerializedTypeProvider.cs" />
+    <Compile Include="Json\AsyncBlockReader.cs" />
+    <Compile Include="Json\BinaryToken.cs" />
+    <Compile Include="Json\BlockInfo.cs" />
+    <Compile Include="Json\BlockStreamReader.cs" />
+    <Compile Include="Json\Convert.cs" />
+    <Compile Include="Json\DeserializationEvent.cs" />
+    <Compile Include="Json\DeserializationResult.cs" />
+    <Compile Include="Json\DictionaryElementProperty.cs" />
+    <Compile Include="Json\EventType.cs" />
+    <Compile Include="Json\Handle.cs" />
+    <Compile Include="Json\HandleData.cs" />
+    <Compile Include="Json\IContravariantJsonAdapter.cs" />
+    <Compile Include="Json\IContravariantJsonMigration.cs" />
+    <Compile Include="Json\IJsonAdapter.2.cs" />
+    <Compile Include="Json\IJsonAdapter.cs" />
+    <Compile Include="Json\IJsonDeserializationContext.cs" />
+    <Compile Include="Json\IJsonMigration.2.cs" />
+    <Compile Include="Json\IJsonMigration.cs" />
+    <Compile Include="Json\IJsonSerializationContext.cs" />
+    <Compile Include="Json\InvalidJsonException.cs" />
+    <Compile Include="Json\ISerializedView.cs" />
+    <Compile Include="Json\IUnsafeStreamBlockReader.cs" />
+    <Compile Include="Json\JsonAdapter.cs" />
+    <Compile Include="Json\JsonAdapterCollection.cs" />
+    <Compile Include="Json\JsonAdapterFilter.cs" />
+    <Compile Include="Json\JsonArray.cs" />
+    <Compile Include="Json\JsonCommentType.cs" />
+    <Compile Include="Json\JsonDeserializationContext.cs" />
+    <Compile Include="Json\JsonMigrationCollection.cs" />
+    <Compile Include="Json\JsonMigrationContext.cs" />
+    <Compile Include="Json\JsonObject.cs" />
+    <Compile Include="Json\JsonPropertyReader.cs" />
+    <Compile Include="Json\JsonPropertyVisitor.cs" />
+    <Compile Include="Json\JsonPropertyWriter.cs" />
+    <Compile Include="Json\JsonSerialization.cs" />
+    <Compile Include="Json\JsonSerializationContext.cs" />
+    <Compile Include="Json\JsonSerializationParameters.cs" />
+    <Compile Include="Json\JsonSerializationState.cs" />
+    <Compile Include="Json\JsonTokenizer.cs" />
+    <Compile Include="Json\JsonTokenStream.cs" />
+    <Compile Include="Json\JsonType.cs" />
+    <Compile Include="Json\JsonTypeStack.cs" />
+    <Compile Include="Json\JsonValidationResult.cs" />
+    <Compile Include="Json\JsonValidationType.cs" />
+    <Compile Include="Json\JsonValidator.cs" />
+    <Compile Include="Json\JsonWriter.cs" />
+    <Compile Include="Json\JsonWriterOptions.cs" />
+    <Compile Include="Json\ManagedCharBuffer.cs" />
+    <Compile Include="Json\NodeParser.cs" />
+    <Compile Include="Json\NodeType.cs" />
+    <Compile Include="Json\PackedBinaryStream.cs" />
+    <Compile Include="Json\PackedBinaryWriter.cs" />
+    <Compile Include="Json\SerializationConfiguration.cs" />
+    <Compile Include="Json\SerializedArrayView.cs" />
+    <Compile Include="Json\SerializedArrayViewPropertyBag.cs" />
+    <Compile Include="Json\SerializedMemberView.cs" />
+    <Compile Include="Json\SerializedMemberViewCollection.cs" />
+    <Compile Include="Json\SerializedObjectReader.cs" />
+    <Compile Include="Json\SerializedObjectReaderConfiguration.cs" />
+    <Compile Include="Json\SerializedObjectView.cs" />
+    <Compile Include="Json\SerializedObjectViewPropertyBag.cs" />
+    <Compile Include="Json\SerializedPrimitiveView.cs" />
+    <Compile Include="Json\SerializedStringView.cs" />
+    <Compile Include="Json\SerializedValueView.cs" />
+    <Compile Include="Json\SyncBlockReader.cs" />
+    <Compile Include="Json\Token.cs" />
+    <Compile Include="Json\TokenType.cs" />
+    <Compile Include="Json\UnsafeJsonTokenizer.cs" />
+    <Compile Include="Json\UnsafeJsonTokenStream.cs" />
+    <Compile Include="Json\UnsafeJsonValidator.cs" />
+    <Compile Include="Json\UnsafeNodeParser.cs" />
+    <Compile Include="Json\UnsafePackedBinaryStream.cs" />
+    <Compile Include="Json\UnsafePackedBinaryWriter.cs" />
+    <Compile Include="Json\UnsafeSerializedObjectReader.cs" />
+    <Compile Include="Json\Unsafe\UnsafeArrayView.cs" />
+    <Compile Include="Json\Unsafe\UnsafeMemberView.cs" />
+    <Compile Include="Json\Unsafe\UnsafeObjectView.cs" />
+    <Compile Include="Json\Unsafe\UnsafePrimitiveView.cs" />
+    <Compile Include="Json\Unsafe\UnsafeStringView.cs" />
+    <Compile Include="Json\Unsafe\UnsafeValueView.cs" />
+    <Compile Include="Json\Unsafe\UnsafeView.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="NativeArrayUtility.cs" />
+    <Compile Include="ParseErrorException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyChecks.cs" />
+    <Compile Include="PropertyWrapper.cs" />
+    <Compile Include="SerializationException.cs" />
+    <Compile Include="SerializedReferences.cs" />
+    <Compile Include="SerializedReferenceVisitor.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="UnsafeBuffer.cs" />
+    <Compile Include="__JobReflectionRegistrationOutput__14542720655017034712.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\netstandard\netstandard.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD8E}</Project>
+      <Name>netstandard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Burst\Unity.Burst.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDA5}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Collections\Unity.Collections.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDA6}</Project>
+      <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDAA}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBB}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PropertiesModule\UnityEngine.PropertiesModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC6}</Project>
+      <Name>UnityEngine.PropertiesModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

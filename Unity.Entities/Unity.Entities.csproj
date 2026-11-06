@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4690BD40-D6F6-4A25-AD67-5B6654FCBDA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unity.Entities</RootNamespace>
+    <AssemblyName>Unity.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Unity.Mathematics.Extensions">
+      <HintPath>G:\SteamLibrary\steamapps\common\ProjectExhibitionist\Project Exhibitionist_Data\Managed\Unity.Mathematics.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$BurstDirectCallInitializer.cs" />
+    <Compile Include="EntityNameStoreAccess.cs" />
+    <Compile Include="EntityNameStoreAccessData.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="Unity\Assertions\Assert.cs" />
+    <Compile Include="Unity\Core\Compression\Codec.cs" />
+    <Compile Include="Unity\Core\Compression\CodecService.cs" />
+    <Compile Include="Unity\Core\TimeData.cs" />
+    <Compile Include="Unity\Core\XXHash.cs" />
+    <Compile Include="Unity\Debug.cs" />
+    <Compile Include="Unity\Entities\AlwaysSynchronizeSystemAttribute.cs" />
+    <Compile Include="Unity\Entities\AlwaysUpdateSystemAttribute.cs" />
+    <Compile Include="Unity\Entities\Archetype.cs" />
+    <Compile Include="Unity\Entities\ArchetypeChunk.cs" />
+    <Compile Include="Unity\Entities\ArchetypeChunkArray.cs" />
+    <Compile Include="Unity\Entities\ArchetypeChunkData.cs" />
+    <Compile Include="Unity\Entities\ArchetypeChunkDataDebugView.cs" />
+    <Compile Include="Unity\Entities\ArchetypeChunkDebugView.cs" />
+    <Compile Include="Unity\Entities\ArchetypeFlags.cs" />
+    <Compile Include="Unity\Entities\ArchetypeListMap.cs" />
+    <Compile Include="Unity\Entities\ArchetypeQuery.cs" />
+    <Compile Include="Unity\Entities\AspectType.cs" />
+    <Compile Include="Unity\Entities\AspectTypeInfo.cs" />
+    <Compile Include="Unity\Entities\AspectTypeInfoManager.cs" />
+    <Compile Include="Unity\Entities\Asset.cs" />
+    <Compile Include="Unity\Entities\BakingTypeAttribute.cs" />
+    <Compile Include="Unity\Entities\BakingVersionAttribute.cs" />
+    <Compile Include="Unity\Entities\BasicCommand.cs" />
+    <Compile Include="Unity\Entities\BeginFixedStepSimulationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\BeginInitializationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\BeginPresentationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\BeginSimulationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\BeginVariableRateSimulationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\BlobArray.cs" />
+    <Compile Include="Unity\Entities\BlobAssetBatch.cs" />
+    <Compile Include="Unity\Entities\BlobAssetCache.cs" />
+    <Compile Include="Unity\Entities\BlobAssetChange.cs" />
+    <Compile Include="Unity\Entities\BlobAssetHeader.cs" />
+    <Compile Include="Unity\Entities\BlobAssetOwner.cs" />
+    <Compile Include="Unity\Entities\BlobAssetPtr.cs" />
+    <Compile Include="Unity\Entities\BlobAssetPtrHashComparer.cs" />
+    <Compile Include="Unity\Entities\BlobAssetReference.cs" />
+    <Compile Include="Unity\Entities\BlobAssetReferenceChange.cs" />
+    <Compile Include="Unity\Entities\BlobAssetReferenceData.cs" />
+    <Compile Include="Unity\Entities\BlobAssetSerializeExtensions.cs" />
+    <Compile Include="Unity\Entities\BlobBuilder.cs" />
+    <Compile Include="Unity\Entities\BlobBuilderArray.cs" />
+    <Compile Include="Unity\Entities\BlobPtr.cs" />
+    <Compile Include="Unity\Entities\BlobString.cs" />
+    <Compile Include="Unity\Entities\BlobStringExtensions.cs" />
+    <Compile Include="Unity\Entities\BlockAllocator.cs" />
+    <Compile Include="Unity\Entities\BufferAccessor.cs" />
+    <Compile Include="Unity\Entities\BufferAllocator.cs" />
+    <Compile Include="Unity\Entities\BufferAllocatorHeap.cs" />
+    <Compile Include="Unity\Entities\BufferFromEntity.cs" />
+    <Compile Include="Unity\Entities\BufferHeader.cs" />
+    <Compile Include="Unity\Entities\BufferHeaderNode.cs" />
+    <Compile Include="Unity\Entities\BufferLookup.cs" />
+    <Compile Include="Unity\Entities\BufferTypeHandle.cs" />
+    <Compile Include="Unity\Entities\BurstCompatibleAspect.cs" />
+    <Compile Include="Unity\Entities\BurstCompatibleBufferElement.cs" />
+    <Compile Include="Unity\Entities\BurstCompatibleComponentData.cs" />
+    <Compile Include="Unity\Entities\BurstCompatibleEnableableComponent.cs" />
+    <Compile Include="Unity\Entities\BurstCompatibleSharedComponentData.cs" />
+    <Compile Include="Unity\Entities\BurstCompatibleSystem.cs" />
+    <Compile Include="Unity\Entities\BurstMonoInteropMethodAttribute.cs" />
+    <Compile Include="Unity\Entities\CalculateReaderWriterDependency.cs" />
+    <Compile Include="Unity\Entities\ChainCleanup.cs" />
+    <Compile Include="Unity\Entities\ChangeVersionUtility.cs" />
+    <Compile Include="Unity\Entities\Chunk.cs" />
+    <Compile Include="Unity\Entities\ChunkBaseEntityIndexJob.cs" />
+    <Compile Include="Unity\Entities\ChunkDataUtility.cs" />
+    <Compile Include="Unity\Entities\ChunkEntityEnumerator.cs" />
+    <Compile Include="Unity\Entities\ChunkFlags.cs" />
+    <Compile Include="Unity\Entities\ChunkHeader.cs" />
+    <Compile Include="Unity\Entities\ChunkIndex.cs" />
+    <Compile Include="Unity\Entities\ChunkIndexDebugProxy.cs" />
+    <Compile Include="Unity\Entities\ChunkIndexInQuery.cs" />
+    <Compile Include="Unity\Entities\ChunkIterationUtility.cs" />
+    <Compile Include="Unity\Entities\ChunkListMap.cs" />
+    <Compile Include="Unity\Entities\ChunkSerializableAttribute.cs" />
+    <Compile Include="Unity\Entities\CleanupEntity.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\AllowDynamicValueAttribute.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\ForEachLambdaJobDescription.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\ILambdaJobDescription.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\ILambdaJobExecutionDescription.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\ILambdaSingleJobExecutionDescription.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\ISingleJobDescription.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\ISupportForEachWithUniversalDelegate.cs" />
+    <Compile Include="Unity\Entities\CodeGeneratedJobForEach\LambdaSingleJobDescription.cs" />
+    <Compile Include="Unity\Entities\ComponentDataFromEntity.cs" />
+    <Compile Include="Unity\Entities\ComponentDependencyManager.cs" />
+    <Compile Include="Unity\Entities\ComponentLookup.cs" />
+    <Compile Include="Unity\Entities\ComponentSystemBase.cs" />
+    <Compile Include="Unity\Entities\ComponentSystemBaseManagedComponentExtensions.cs" />
+    <Compile Include="Unity\Entities\ComponentSystemGroup.cs" />
+    <Compile Include="Unity\Entities\ComponentSystemGroupDebugView.cs" />
+    <Compile Include="Unity\Entities\ComponentSystemGroupExtensions.cs" />
+    <Compile Include="Unity\Entities\ComponentSystemSorter.cs" />
+    <Compile Include="Unity\Entities\ComponentType.cs" />
+    <Compile Include="Unity\Entities\ComponentTypeFlags.cs" />
+    <Compile Include="Unity\Entities\ComponentTypeHandle.cs" />
+    <Compile Include="Unity\Entities\ComponentTypeHash.cs" />
+    <Compile Include="Unity\Entities\ComponentTypeInArchetype.cs" />
+    <Compile Include="Unity\Entities\ComponentTypeList.cs" />
+    <Compile Include="Unity\Entities\ComponentTypes.cs" />
+    <Compile Include="Unity\Entities\ComponentTypeSet.cs" />
+    <Compile Include="Unity\Entities\ComponentTypeSetDebugView.cs" />
+    <Compile Include="Unity\Entities\ComponentType_.cs" />
+    <Compile Include="Unity\Entities\Component_E.cs" />
+    <Compile Include="Unity\Entities\Content\ContentArchiveId.cs" />
+    <Compile Include="Unity\Entities\Content\ContentArchiveLocation.cs" />
+    <Compile Include="Unity\Entities\Content\ContentBlobLocation.cs" />
+    <Compile Include="Unity\Entities\Content\ContentDeliveryGlobalState.cs" />
+    <Compile Include="Unity\Entities\Content\ContentDeliveryService.cs" />
+    <Compile Include="Unity\Entities\Content\ContentDownloadService.cs" />
+    <Compile Include="Unity\Entities\Content\ContentFileId.cs" />
+    <Compile Include="Unity\Entities\Content\ContentFileLocation.cs" />
+    <Compile Include="Unity\Entities\Content\ContentLocationService.cs" />
+    <Compile Include="Unity\Entities\Content\ContentObjectLocation.cs" />
+    <Compile Include="Unity\Entities\Content\ContentSceneId.cs" />
+    <Compile Include="Unity\Entities\Content\ContentSceneLocation.cs" />
+    <Compile Include="Unity\Entities\Content\DefaultContentLocationService.cs" />
+    <Compile Include="Unity\Entities\Content\DownloadOperationHttpClient.cs" />
+    <Compile Include="Unity\Entities\Content\DownloadOperationUnityWebRequest.cs" />
+    <Compile Include="Unity\Entities\Content\IRuntimeCatalogDataSource.cs" />
+    <Compile Include="Unity\Entities\Content\ManagedStringTable.cs" />
+    <Compile Include="Unity\Entities\Content\MultiProducerSingleBulkConsumerQueue.cs" />
+    <Compile Include="Unity\Entities\Content\ObjectLoadingStatus.cs" />
+    <Compile Include="Unity\Entities\Content\ObjectValueCache.cs" />
+    <Compile Include="Unity\Entities\Content\RemoteContentCatalogData.cs" />
+    <Compile Include="Unity\Entities\Content\RemoteContentId.cs" />
+    <Compile Include="Unity\Entities\Content\RemoteContentLocation.cs" />
+    <Compile Include="Unity\Entities\Content\RuntimeContentCatalog.cs" />
+    <Compile Include="Unity\Entities\Content\RuntimeContentCatalogData.cs" />
+    <Compile Include="Unity\Entities\Content\RuntimeContentCatalogDataUtility.cs" />
+    <Compile Include="Unity\Entities\Content\RuntimeContentManager.cs" />
+    <Compile Include="Unity\Entities\Content\RuntimeContentManagerProfiler.cs" />
+    <Compile Include="Unity\Entities\Content\RuntimeContentManagerProfilerFrameData.cs" />
+    <Compile Include="Unity\Entities\Content\RuntimeContentSystem.cs" />
+    <Compile Include="Unity\Entities\Content\WeakObjectReference.cs" />
+    <Compile Include="Unity\Entities\Content\WeakObjectSceneReference.cs" />
+    <Compile Include="Unity\Entities\CopyComponentArrayToChunksJob.cs" />
+    <Compile Include="Unity\Entities\CopyComponentListToChunksJob.cs" />
+    <Compile Include="Unity\Entities\CopyIndexedInt.cs" />
+    <Compile Include="Unity\Entities\CreateAfterAttribute.cs" />
+    <Compile Include="Unity\Entities\CreateBeforeAttribute.cs" />
+    <Compile Include="Unity\Entities\CreateCommand.cs" />
+    <Compile Include="Unity\Entities\DebuggerDataAccess.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobArrayDebug.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobAssetReferenceProxy.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobMember.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobProxy.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobPtrDebug.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobPtrProxy.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobStruct.cs" />
+    <Compile Include="Unity\Entities\DebugProxies\BlobStructProxy.cs" />
+    <Compile Include="Unity\Entities\DefaultWorldInitialization.cs" />
+    <Compile Include="Unity\Entities\DefaultWorldInitializationProxy.cs" />
+    <Compile Include="Unity\Entities\DisableAutoCreationAttribute.cs" />
+    <Compile Include="Unity\Entities\DisableAutoTypeRegistrationAttribute.cs" />
+    <Compile Include="Unity\Entities\Disabled.cs" />
+    <Compile Include="Unity\Entities\DisableGenerationAttribute.cs" />
+    <Compile Include="Unity\Entities\DisallowRefReturnCrossingThisAttribute.cs" />
+    <Compile Include="Unity\Entities\DOTSCompilerGeneratedAttribute.cs" />
+    <Compile Include="Unity\Entities\DOTSCompilerPatchedMethodAttribute.cs" />
+    <Compile Include="Unity\Entities\DOTSCompilerPatchedPropertyAttribute.cs" />
+    <Compile Include="Unity\Entities\DuplicateEntityGuid.cs" />
+    <Compile Include="Unity\Entities\DuplicateEntityGuidException.cs" />
+    <Compile Include="Unity\Entities\DynamicBlobAssetBatch.cs" />
+    <Compile Include="Unity\Entities\DynamicBuffer.cs" />
+    <Compile Include="Unity\Entities\DynamicBufferDebugView.cs" />
+    <Compile Include="Unity\Entities\DynamicComponentTypeHandle.cs" />
+    <Compile Include="Unity\Entities\DynamicSharedComponentTypeHandle.cs" />
+    <Compile Include="Unity\Entities\ECBChainHeapElement.cs" />
+    <Compile Include="Unity\Entities\ECBChainPlaybackState.cs" />
+    <Compile Include="Unity\Entities\ECBChainPriorityQueue.cs" />
+    <Compile Include="Unity\Entities\ECBChunk.cs" />
+    <Compile Include="Unity\Entities\ECBCommand.cs" />
+    <Compile Include="Unity\Entities\ECBExtensionMethods.cs" />
+    <Compile Include="Unity\Entities\ECBInterop.cs" />
+    <Compile Include="Unity\Entities\ECBSharedPlaybackState.cs" />
+    <Compile Include="Unity\Entities\EnabledBitUtility.cs" />
+    <Compile Include="Unity\Entities\EnabledMask.cs" />
+    <Compile Include="Unity\Entities\EnabledRefRO.cs" />
+    <Compile Include="Unity\Entities\EnabledRefRW.cs" />
+    <Compile Include="Unity\Entities\EndFixedStepSimulationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\EndInitializationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\EndSimulationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\EndVariableRateSimulationEntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\EntitiesProfiler.cs" />
+    <Compile Include="Unity\Entities\Entity.cs" />
+    <Compile Include="Unity\Entities\EntityArchetype.cs" />
+    <Compile Include="Unity\Entities\EntityArchetypeDebugView.cs" />
+    <Compile Include="Unity\Entities\EntityBatchInChunk.cs" />
+    <Compile Include="Unity\Entities\EntityBufferCommand.cs" />
+    <Compile Include="Unity\Entities\EntityChanges.cs" />
+    <Compile Include="Unity\Entities\EntityChangeSet.cs" />
+    <Compile Include="Unity\Entities\EntityChangeSetFormatter.cs" />
+    <Compile Include="Unity\Entities\EntityCommand.cs" />
+    <Compile Include="Unity\Entities\EntityCommandBuffer.cs" />
+    <Compile Include="Unity\Entities\EntityCommandBufferChain.cs" />
+    <Compile Include="Unity\Entities\EntityCommandBufferData.cs" />
+    <Compile Include="Unity\Entities\EntityCommandBufferManagedComponentExtensions.cs" />
+    <Compile Include="Unity\Entities\EntityCommandBufferSystem.cs" />
+    <Compile Include="Unity\Entities\EntityComponentCommand.cs" />
+    <Compile Include="Unity\Entities\EntityComponentEnabledCommand.cs" />
+    <Compile Include="Unity\Entities\EntityComponentGCNode.cs" />
+    <Compile Include="Unity\Entities\EntityComponentStore.cs" />
+    <Compile Include="Unity\Entities\EntityDataAccess.cs" />
+    <Compile Include="Unity\Entities\EntityDataAccessManagedComponentExtensions.cs" />
+    <Compile Include="Unity\Entities\EntityDebugProxy.cs" />
+    <Compile Include="Unity\Entities\EntityDiffer.cs" />
+    <Compile Include="Unity\Entities\EntityEnabledCommand.cs" />
+    <Compile Include="Unity\Entities\EntityGuid.cs" />
+    <Compile Include="Unity\Entities\EntityInChunk.cs" />
+    <Compile Include="Unity\Entities\EntityIndexInChunk.cs" />
+    <Compile Include="Unity\Entities\EntityIndexInQuery.cs" />
+    <Compile Include="Unity\Entities\EntityInQueryIndex.cs" />
+    <Compile Include="Unity\Entities\EntityManagedComponentCommand.cs" />
+    <Compile Include="Unity\Entities\EntityManager.cs" />
+    <Compile Include="Unity\Entities\EntityManagerDebugView.cs" />
+    <Compile Include="Unity\Entities\EntityManagerDiffer.cs" />
+    <Compile Include="Unity\Entities\EntityManagerDifferOptions.cs" />
+    <Compile Include="Unity\Entities\EntityManagerManagedComponentExtensions.cs" />
+    <Compile Include="Unity\Entities\EntityMoveManagedComponentCommand.cs" />
+    <Compile Include="Unity\Entities\EntityMultipleComponentsCommand.cs" />
+    <Compile Include="Unity\Entities\EntityName.cs" />
+    <Compile Include="Unity\Entities\EntityNameCommand.cs" />
+    <Compile Include="Unity\Entities\EntityNameStorage.cs" />
+    <Compile Include="Unity\Entities\EntityNameStorageDebugView.cs" />
+    <Compile Include="Unity\Entities\EntityNode.cs" />
+    <Compile Include="Unity\Entities\EntityPatcher.cs" />
+    <Compile Include="Unity\Entities\EntityPatcherBlobAssetSystem.cs" />
+    <Compile Include="Unity\Entities\EntityQuery.cs" />
+    <Compile Include="Unity\Entities\EntityQueryBuilder.cs" />
+    <Compile Include="Unity\Entities\EntityQueryCaptureMode.cs" />
+    <Compile Include="Unity\Entities\EntityQueryCommand.cs" />
+    <Compile Include="Unity\Entities\EntityQueryComponentCommand.cs" />
+    <Compile Include="Unity\Entities\EntityQueryComponentCommandWithObject.cs" />
+    <Compile Include="Unity\Entities\EntityQueryComponentCommandWithUnmanagedSharedComponent.cs" />
+    <Compile Include="Unity\Entities\EntityQueryComponentTypeSetCommand.cs" />
+    <Compile Include="Unity\Entities\EntityQueryData.cs" />
+    <Compile Include="Unity\Entities\EntityQueryDebugView.cs" />
+    <Compile Include="Unity\Entities\EntityQueryDesc.cs" />
+    <Compile Include="Unity\Entities\EntityQueryDescBuilder.cs" />
+    <Compile Include="Unity\Entities\EntityQueryDescValidationException.cs" />
+    <Compile Include="Unity\Entities\EntityQueryFilter.cs" />
+    <Compile Include="Unity\Entities\EntityQueryImpl.cs" />
+    <Compile Include="Unity\Entities\EntityQueryManagedComponentExtensions.cs" />
+    <Compile Include="Unity\Entities\EntityQueryManager.cs" />
+    <Compile Include="Unity\Entities\EntityQueryMask.cs" />
+    <Compile Include="Unity\Entities\EntityQueryMaskCommand.cs" />
+    <Compile Include="Unity\Entities\EntityQueryOptions.cs" />
+    <Compile Include="Unity\Entities\EntityReferenceChange.cs" />
+    <Compile Include="Unity\Entities\EntityRemapUtility.cs" />
+    <Compile Include="Unity\Entities\EntitySharedComponentCommand.cs" />
+    <Compile Include="Unity\Entities\EntityStorageInfo.cs" />
+    <Compile Include="Unity\Entities\EntityStorageInfoLookup.cs" />
+    <Compile Include="Unity\Entities\EntityTypeHandle.cs" />
+    <Compile Include="Unity\Entities\EntityUnmanagedSharedComponentCommand.cs" />
+    <Compile Include="Unity\Entities\Entity_.cs" />
+    <Compile Include="Unity\Entities\ExclusiveEntityTransaction.cs" />
+    <Compile Include="Unity\Entities\FastEquality.cs" />
+    <Compile Include="Unity\Entities\FilteredArchetype.cs" />
+    <Compile Include="Unity\Entities\FilteredChunkIndexJob.cs" />
+    <Compile Include="Unity\Entities\FixedStepSimulationSystemGroup.cs" />
+    <Compile Include="Unity\Entities\GatherChunksJob.cs" />
+    <Compile Include="Unity\Entities\GatherChunksToArrayJob.cs" />
+    <Compile Include="Unity\Entities\GatherChunksToArrayWithFilteringJob.cs" />
+    <Compile Include="Unity\Entities\GatherComponentDataJob.cs" />
+    <Compile Include="Unity\Entities\GatherComponentDataToArrayJob.cs" />
+    <Compile Include="Unity\Entities\GatherEntitiesJob.cs" />
+    <Compile Include="Unity\Entities\GatherEntitiesToArrayJob.cs" />
+    <Compile Include="Unity\Entities\GenerateBurstMonoInteropAttribute.cs" />
+    <Compile Include="Unity\Entities\GlobalScratchpad.cs" />
+    <Compile Include="Unity\Entities\Hash128.cs" />
+    <Compile Include="Unity\Entities\IAspect.cs" />
+    <Compile Include="Unity\Entities\IAspectCreate.cs" />
+    <Compile Include="Unity\Entities\IBufferAllocator.cs" />
+    <Compile Include="Unity\Entities\IBufferElementData.cs" />
+    <Compile Include="Unity\Entities\ICleanupBufferElementData.cs" />
+    <Compile Include="Unity\Entities\ICleanupComponentData.cs" />
+    <Compile Include="Unity\Entities\ICleanupSharedComponentData.cs" />
+    <Compile Include="Unity\Entities\IComponentData.cs" />
+    <Compile Include="Unity\Entities\ICustomBootstrap.cs" />
+    <Compile Include="Unity\Entities\IECBSingleton.cs" />
+    <Compile Include="Unity\Entities\IEnableableComponent.cs" />
+    <Compile Include="Unity\Entities\IFixedRateManager.cs" />
+    <Compile Include="Unity\Entities\IJobChunk.cs" />
+    <Compile Include="Unity\Entities\IJobEntity.cs" />
+    <Compile Include="Unity\Entities\IJobEntityChunkBeginEnd.cs" />
+    <Compile Include="Unity\Entities\IJobEntityExtensions.cs" />
+    <Compile Include="Unity\Entities\IndexedInt.cs" />
+    <Compile Include="Unity\Entities\IndexedValue.cs" />
+    <Compile Include="Unity\Entities\InitializationSystemGroup.cs" />
+    <Compile Include="Unity\Entities\InternalBufferCapacityAttribute.cs" />
+    <Compile Include="Unity\Entities\Internal\InternalCompilerInterface.cs" />
+    <Compile Include="Unity\Entities\Internal\InternalEntityQueryEnumerator.cs" />
+    <Compile Include="Unity\Entities\Internal\InternalGatherEntitiesResult.cs" />
+    <Compile Include="Unity\Entities\Invalid_ForEach_Signature_See_ForEach_Documentation_For_Rule.cs" />
+    <Compile Include="Unity\Entities\IQueryTypeParameter.cs" />
+    <Compile Include="Unity\Entities\IRateManager.cs" />
+    <Compile Include="Unity\Entities\IRefCounted.cs" />
+    <Compile Include="Unity\Entities\ISharedComponentData.cs" />
+    <Compile Include="Unity\Entities\ISystem.cs" />
+    <Compile Include="Unity\Entities\ISystemCompilerGenerated.cs" />
+    <Compile Include="Unity\Entities\ISystemOrderAttribute.cs" />
+    <Compile Include="Unity\Entities\ISystemStartStop.cs" />
+    <Compile Include="Unity\Entities\ISystemStateBufferElementData.cs" />
+    <Compile Include="Unity\Entities\ISystemStateComponentData.cs" />
+    <Compile Include="Unity\Entities\ISystemStateSharedComponentData.cs" />
+    <Compile Include="Unity\Entities\ITypedVisit.cs" />
+    <Compile Include="Unity\Entities\JobChunkExtensions.cs" />
+    <Compile Include="Unity\Entities\JoinChunksJob.cs" />
+    <Compile Include="Unity\Entities\LambdaForEachDescriptionConstructionMethods.cs" />
+    <Compile Include="Unity\Entities\LambdaJobDescriptionConstructionMethods.cs" />
+    <Compile Include="Unity\Entities\LambdaJobDescriptionExecutionMethods.cs" />
+    <Compile Include="Unity\Entities\LambdaJobQueryConstructionMethods.cs" />
+    <Compile Include="Unity\Entities\LambdaSingleJobDescriptionConstructionMethods.cs" />
+    <Compile Include="Unity\Entities\LambdaSingleJobDescriptionExecutionMethods.cs" />
+    <Compile Include="Unity\Entities\LateSimulationSystemGroup.cs" />
+    <Compile Include="Unity\Entities\LinkedEntityGroup.cs" />
+    <Compile Include="Unity\Entities\LinkedEntityGroupChange.cs" />
+    <Compile Include="Unity\Entities\LookupCache.cs" />
+    <Compile Include="Unity\Entities\LowLevel\SpinLock.cs" />
+    <Compile Include="Unity\Entities\LowLevel\UnsafeStack.cs" />
+    <Compile Include="Unity\Entities\LowLevel\Unsafe\UnsafeCircularBuffer.cs" />
+    <Compile Include="Unity\Entities\LowLevel\Unsafe\UnsafeCircularBufferTDebugView.cs" />
+    <Compile Include="Unity\Entities\LowLevel\Unsafe\UnsafeUntypedBlobAssetReference.cs" />
+    <Compile Include="Unity\Entities\LowLevel\Unsafe\UnsafeUntypedBufferAccessor.cs" />
+    <Compile Include="Unity\Entities\ManagedComponentAccessor.cs" />
+    <Compile Include="Unity\Entities\ManagedComponentStore.cs" />
+    <Compile Include="Unity\Entities\ManagedDeferredCommands.cs" />
+    <Compile Include="Unity\Entities\ManagedEntityDataAccess.cs" />
+    <Compile Include="Unity\Entities\ManagedObjectBlobs.cs" />
+    <Compile Include="Unity\Entities\ManagedObjectClone.cs" />
+    <Compile Include="Unity\Entities\ManagedObjectEqual.cs" />
+    <Compile Include="Unity\Entities\ManagedObjectRemap.cs" />
+    <Compile Include="Unity\Entities\MatchingArchetype.cs" />
+    <Compile Include="Unity\Entities\MaximumChunkCapacityAttribute.cs" />
+    <Compile Include="Unity\Entities\MayOnlyLiveInBlobStorageAttribute.cs" />
+    <Compile Include="Unity\Entities\MemsetNativeArray.cs" />
+    <Compile Include="Unity\Entities\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Unity\Entities\MultipleEntitiesAndComponentsCommand.cs" />
+    <Compile Include="Unity\Entities\MultipleEntitiesCommand.cs" />
+    <Compile Include="Unity\Entities\MultipleEntitiesCommand_WithUnmanagedSharedComponent.cs" />
+    <Compile Include="Unity\Entities\MultipleEntitiesComponentCommand.cs" />
+    <Compile Include="Unity\Entities\MultipleEntitiesComponentCommandWithObject.cs" />
+    <Compile Include="Unity\Entities\NativeArraySharedInt.cs" />
+    <Compile Include="Unity\Entities\OmitLinkedEntityGroupFromPrefabInstance.cs" />
+    <Compile Include="Unity\Entities\OptionalAttribute.cs" />
+    <Compile Include="Unity\Entities\PackedComponent.cs" />
+    <Compile Include="Unity\Entities\PackedComponentDataChange.cs" />
+    <Compile Include="Unity\Entities\PackedManagedComponentDataChange.cs" />
+    <Compile Include="Unity\Entities\PackedSharedComponentDataChange.cs" />
+    <Compile Include="Unity\Entities\PerWorldSystemInfo.cs" />
+    <Compile Include="Unity\Entities\PlaybackPolicy.cs" />
+    <Compile Include="Unity\Entities\PostLoadCommandBuffer.cs" />
+    <Compile Include="Unity\Entities\Prefab.cs" />
+    <Compile Include="Unity\Entities\PrefabRoot.cs" />
+    <Compile Include="Unity\Entities\PresentationSystemGroup.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerable.2.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerable.3.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerable.4.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerable.5.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerable.6.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerable.7.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerable.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerableWithEntity.2.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerableWithEntity.3.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerableWithEntity.4.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerableWithEntity.5.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerableWithEntity.6.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerableWithEntity.7.cs" />
+    <Compile Include="Unity\Entities\QueryEnumerableWithEntity.cs" />
+    <Compile Include="Unity\Entities\RateUtils.cs" />
+    <Compile Include="Unity\Entities\RefRO.cs" />
+    <Compile Include="Unity\Entities\RefRW.cs" />
+    <Compile Include="Unity\Entities\RegisterGenericComponentTypeAttribute.cs" />
+    <Compile Include="Unity\Entities\RegisterGenericSystemTypeAttribute.cs" />
+    <Compile Include="Unity\Entities\RequestSceneLoaded.cs" />
+    <Compile Include="Unity\Entities\RequireMatchingQueriesForUpdateAttribute.cs" />
+    <Compile Include="Unity\Entities\RetainBlobAssetBatchPtr.cs" />
+    <Compile Include="Unity\Entities\RetainBlobAssetPtr.cs" />
+    <Compile Include="Unity\Entities\RetainBlobAssets.cs" />
+    <Compile Include="Unity\Entities\RetainBlobAssetSystem.cs" />
+    <Compile Include="Unity\Entities\RuntimeApplication.cs" />
+    <Compile Include="Unity\Entities\RuntimeBlobHeaderRef.cs" />
+    <Compile Include="Unity\Entities\SafeBitRef.cs" />
+    <Compile Include="Unity\Entities\SceneLoadFlags.cs" />
+    <Compile Include="Unity\Entities\SceneReference.cs" />
+    <Compile Include="Unity\Entities\SceneSection.cs" />
+    <Compile Include="Unity\Entities\SceneSectionData.cs" />
+    <Compile Include="Unity\Entities\SceneTag.cs" />
+    <Compile Include="Unity\Entities\Scratchpad.cs" />
+    <Compile Include="Unity\Entities\ScratchpadAllocator.cs" />
+    <Compile Include="Unity\Entities\ScriptBehaviourUpdateOrder.cs" />
+    <Compile Include="Unity\Entities\SectionMetadataSetup.cs" />
+    <Compile Include="Unity\Entities\SegmentSortInt.cs" />
+    <Compile Include="Unity\Entities\SegmentSortMergeInt.cs" />
+    <Compile Include="Unity\Entities\Serialization\BinaryReader.cs" />
+    <Compile Include="Unity\Entities\Serialization\BinaryReaderExtensions.cs" />
+    <Compile Include="Unity\Entities\Serialization\BinaryWriter.cs" />
+    <Compile Include="Unity\Entities\Serialization\BinaryWriterExtensions.cs" />
+    <Compile Include="Unity\Entities\Serialization\BurstableMemoryBinaryReader.cs" />
+    <Compile Include="Unity\Entities\Serialization\DotsSerialization.cs" />
+    <Compile Include="Unity\Entities\Serialization\DotsSerializationHelpers.cs" />
+    <Compile Include="Unity\Entities\Serialization\DotsSerializationReader.cs" />
+    <Compile Include="Unity\Entities\Serialization\DotsSerializationWriter.cs" />
+    <Compile Include="Unity\Entities\Serialization\EntityPrefabReference.cs" />
+    <Compile Include="Unity\Entities\Serialization\EntitySceneReference.cs" />
+    <Compile Include="Unity\Entities\Serialization\ExternalEntityReference.cs" />
+    <Compile Include="Unity\Entities\Serialization\ManagedObjectBinaryReader.cs" />
+    <Compile Include="Unity\Entities\Serialization\ManagedObjectBinaryWriter.cs" />
+    <Compile Include="Unity\Entities\Serialization\MemoryBinaryReader.cs" />
+    <Compile Include="Unity\Entities\Serialization\MemoryBinaryWriter.cs" />
+    <Compile Include="Unity\Entities\Serialization\PagedAllocation.cs" />
+    <Compile Include="Unity\Entities\Serialization\RuntimeGlobalObjectId.cs" />
+    <Compile Include="Unity\Entities\Serialization\SerializedKeyFrame.cs" />
+    <Compile Include="Unity\Entities\Serialization\SerializeUtility.cs" />
+    <Compile Include="Unity\Entities\Serialization\SerializeUtilityInterop.cs" />
+    <Compile Include="Unity\Entities\Serialization\StableArchetypeCompare.cs" />
+    <Compile Include="Unity\Entities\Serialization\StreamBinaryReader.cs" />
+    <Compile Include="Unity\Entities\Serialization\StreamBinaryWriter.cs" />
+    <Compile Include="Unity\Entities\Serialization\StringTableReaderHandle.cs" />
+    <Compile Include="Unity\Entities\Serialization\StringTableWriterHandle.cs" />
+    <Compile Include="Unity\Entities\Serialization\UnsafeUntypedWeakReferenceId.cs" />
+    <Compile Include="Unity\Entities\Serialization\UntypedWeakReferenceId.cs" />
+    <Compile Include="Unity\Entities\Serialization\WeakReferenceGenerationType.cs" />
+    <Compile Include="Unity\Entities\Serialization\YamlWriter.cs" />
+    <Compile Include="Unity\Entities\SharedComponentTypeHandle.cs" />
+    <Compile Include="Unity\Entities\SharedComponentValues.cs" />
+    <Compile Include="Unity\Entities\Simulate.cs" />
+    <Compile Include="Unity\Entities\SimulationSystemGroup.cs" />
+    <Compile Include="Unity\Entities\SortingUtilities.cs" />
+    <Compile Include="Unity\Entities\StorageInfoFromEntity.cs" />
+    <Compile Include="Unity\Entities\StructuralChange.cs" />
+    <Compile Include="Unity\Entities\SupportedInEntitiesForEach.cs" />
+    <Compile Include="Unity\Entities\SystemAPI.cs" />
+    <Compile Include="Unity\Entities\SystemAPIQueryBuilder.cs" />
+    <Compile Include="Unity\Entities\SystemBase.cs" />
+    <Compile Include="Unity\Entities\SystemBaseDelegates.cs" />
+    <Compile Include="Unity\Entities\SystemBaseRegistry.cs" />
+    <Compile Include="Unity\Entities\SystemDebugView.cs" />
+    <Compile Include="Unity\Entities\SystemDependencySafetyUtility.cs" />
+    <Compile Include="Unity\Entities\SystemHandle.cs" />
+    <Compile Include="Unity\Entities\SystemHandleUntyped.cs" />
+    <Compile Include="Unity\Entities\SystemInstance.cs" />
+    <Compile Include="Unity\Entities\SystemState.cs" />
+    <Compile Include="Unity\Entities\SystemState_.cs" />
+    <Compile Include="Unity\Entities\SystemTypeIndex.cs" />
+    <Compile Include="Unity\Entities\TemporaryBakingTypeAttribute.cs" />
+    <Compile Include="Unity\Entities\TypeHash.cs" />
+    <Compile Include="Unity\Entities\TypeIndex.cs" />
+    <Compile Include="Unity\Entities\TypelessUnsafeList.cs" />
+    <Compile Include="Unity\Entities\TypeManager.cs" />
+    <Compile Include="Unity\Entities\UnityObjectRef.cs" />
+    <Compile Include="Unity\Entities\UnityObjectRefMap.cs" />
+    <Compile Include="Unity\Entities\UnityObjectRefUtility.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\Empty.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\I.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\II.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\III.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\IIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\IIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\IIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\IIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\IIIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\R.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RIIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\RRRRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\V.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VIIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VRRRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VV.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVIIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVRRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVV.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVIIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVRRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVV.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVIIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVRRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVV.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVIII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVRII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVRRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVRRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVV.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVII.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVRI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVRR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVV.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVVI.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVVR.cs" />
+    <Compile Include="Unity\Entities\UniversalDelegates\VVVVVVVV.cs" />
+    <Compile Include="Unity\Entities\UnmanagedComponentSystemDelegates.cs" />
+    <Compile Include="Unity\Entities\UnmanagedSystemFunctionType.cs" />
+    <Compile Include="Unity\Entities\UnmanagedSystemTypeRegistryData.cs" />
+    <Compile Include="Unity\Entities\UnsafeCachedChunkList.cs" />
+    <Compile Include="Unity\Entities\UnsafeChunkCacheIterator.cs" />
+    <Compile Include="Unity\Entities\UnsafeMatchingArchetypePtrList.cs" />
+    <Compile Include="Unity\Entities\UnsafeMatchingArchetypePtrListDebugView.cs" />
+    <Compile Include="Unity\Entities\UntypedUnityObjectRef.cs" />
+    <Compile Include="Unity\Entities\UpdateAfterAttribute.cs" />
+    <Compile Include="Unity\Entities\UpdateBeforeAttribute.cs" />
+    <Compile Include="Unity\Entities\UpdateIndex.cs" />
+    <Compile Include="Unity\Entities\UpdateInGroupAttribute.cs" />
+    <Compile Include="Unity\Entities\VariableRateSimulationSystemGroup.cs" />
+    <Compile Include="Unity\Entities\WithAbsentAttribute.cs" />
+    <Compile Include="Unity\Entities\WithAllAttribute.cs" />
+    <Compile Include="Unity\Entities\WithAnyAttribute.cs" />
+    <Compile Include="Unity\Entities\WithChangeFilterAttribute.cs" />
+    <Compile Include="Unity\Entities\WithDisabledAttribute.cs" />
+    <Compile Include="Unity\Entities\WithEntityQueryOptionsAttribute.cs" />
+    <Compile Include="Unity\Entities\WithNoneAttribute.cs" />
+    <Compile Include="Unity\Entities\WithOptionsAttribute.cs" />
+    <Compile Include="Unity\Entities\WithPresentAttribute.cs" />
+    <Compile Include="Unity\Entities\World.cs" />
+    <Compile Include="Unity\Entities\WorldDebugView.cs" />
+    <Compile Include="Unity\Entities\WorldExtensions.cs" />
+    <Compile Include="Unity\Entities\WorldFlags.cs" />
+    <Compile Include="Unity\Entities\WorldSystemFilterAttribute.cs" />
+    <Compile Include="Unity\Entities\WorldSystemFilterFlags.cs" />
+    <Compile Include="Unity\Entities\WorldTime.cs" />
+    <Compile Include="Unity\Entities\WorldTimeQueue.cs" />
+    <Compile Include="Unity\Entities\WorldUnmanaged.cs" />
+    <Compile Include="Unity\Entities\WorldUnmanagedImpl.cs" />
+    <Compile Include="Unity\Entities\WorldUpdateAllocatorResetSystem.cs" />
+    <Compile Include="Unity\Entities\WriteGroupAttribute.cs" />
+    <Compile Include="Unity\Transforms\Static.cs" />
+    <Compile Include="__JobReflectionRegistrationOutput__873405366014431059.cs" />
+    <Compile Include="__UnmanagedPostProcessorOutput__873405366014431059.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\netstandard\netstandard.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD8E}</Project>
+      <Name>netstandard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Burst\Unity.Burst.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDA5}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Collections\Unity.Collections.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDA6}</Project>
+      <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDAA}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Profiling.Core\Unity.Profiling.Core.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDAB}</Project>
+      <Name>Unity.Profiling.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Serialization\Unity.Serialization.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDB0}</Project>
+      <Name>Unity.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ContentLoadModule\UnityEngine.ContentLoadModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBA}</Project>
+      <Name>UnityEngine.ContentLoadModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBB}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PropertiesModule\UnityEngine.PropertiesModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDC6}</Project>
+      <Name>UnityEngine.PropertiesModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UnityWebRequestModule\UnityEngine.UnityWebRequestModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD7}</Project>
+      <Name>UnityEngine.UnityWebRequestModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

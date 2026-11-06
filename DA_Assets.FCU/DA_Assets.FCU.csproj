@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4690BD40-D6F6-4A25-AD67-5B6654FCBD82}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DA_Assets.FCU</RootNamespace>
+    <AssemblyName>DA_Assets.FCU</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DARequest.cs" />
+    <Compile Include="DA_Assets\FCU\Attributes\FObjectAttribute.cs" />
+    <Compile Include="DA_Assets\FCU\Attributes\PaintPriorityAttribute.cs" />
+    <Compile Include="DA_Assets\FCU\ButtonComponent.cs" />
+    <Compile Include="DA_Assets\FCU\DACycles.cs" />
+    <Compile Include="DA_Assets\FCU\DAFormatter.cs" />
+    <Compile Include="DA_Assets\FCU\DAJson.cs" />
+    <Compile Include="DA_Assets\FCU\DAResult.cs" />
+    <Compile Include="DA_Assets\FCU\DiffInfo.cs" />
+    <Compile Include="DA_Assets\FCU\EffectHashData.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\AutoLayoutExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\FObjectExtensionsAssembly.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\FontExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\GraphicExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\TagExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\TextExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\TransformExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\Extensions\TypeExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\FcuConfig.cs" />
+    <Compile Include="DA_Assets\FCU\FcuDebugSettings.cs" />
+    <Compile Include="DA_Assets\FCU\FcuDebugSettingsFlags.cs" />
+    <Compile Include="DA_Assets\FCU\FcuImageType.cs" />
+    <Compile Include="DA_Assets\FCU\FcuInspectorProperty.cs" />
+    <Compile Include="DA_Assets\FCU\FcuLocExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\FcuLocKey.cs" />
+    <Compile Include="DA_Assets\FCU\FcuLogger.cs" />
+    <Compile Include="DA_Assets\FCU\FcuNameType.cs" />
+    <Compile Include="DA_Assets\FCU\FcuPropertyHeader.cs" />
+    <Compile Include="DA_Assets\FCU\FcuTag.cs" />
+    <Compile Include="DA_Assets\FCU\FFill.cs" />
+    <Compile Include="DA_Assets\FCU\FGraphic.cs" />
+    <Compile Include="DA_Assets\FCU\FieldHashData.cs" />
+    <Compile Include="DA_Assets\FCU\FNames.cs" />
+    <Compile Include="DA_Assets\FCU\FObjectHashData.cs" />
+    <Compile Include="DA_Assets\FCU\FontItem.cs" />
+    <Compile Include="DA_Assets\FCU\FontMetadata.cs" />
+    <Compile Include="DA_Assets\FCU\FontRoot.cs" />
+    <Compile Include="DA_Assets\FCU\FontStruct.cs" />
+    <Compile Include="DA_Assets\FCU\FontSubset.cs" />
+    <Compile Include="DA_Assets\FCU\FrameGroup.cs" />
+    <Compile Include="DA_Assets\FCU\FRect.cs" />
+    <Compile Include="DA_Assets\FCU\FStroke.cs" />
+    <Compile Include="DA_Assets\FCU\GroupedSyncHelpers.cs" />
+    <Compile Include="DA_Assets\FCU\ImageComponent.cs" />
+    <Compile Include="DA_Assets\FCU\ImageFormat.cs" />
+    <Compile Include="DA_Assets\FCU\JFResult.cs" />
+    <Compile Include="DA_Assets\FCU\LayerTools.cs" />
+    <Compile Include="DA_Assets\FCU\LocalizationComponent.cs" />
+    <Compile Include="DA_Assets\FCU\LocalizationKeyCaseType.cs" />
+    <Compile Include="DA_Assets\FCU\Model\ArcData.cs" />
+    <Compile Include="DA_Assets\FCU\Model\AuthResult.cs" />
+    <Compile Include="DA_Assets\FCU\Model\BoundingBox.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Constraint.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Constraints.cs" />
+    <Compile Include="DA_Assets\FCU\Model\ConstraintType.cs" />
+    <Compile Include="DA_Assets\FCU\Model\CounterAxisAlignItem.cs" />
+    <Compile Include="DA_Assets\FCU\Model\CounterAxisSizingMode.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Effect.cs" />
+    <Compile Include="DA_Assets\FCU\Model\EffectType.cs" />
+    <Compile Include="DA_Assets\FCU\Model\ExportSetting.cs" />
+    <Compile Include="DA_Assets\FCU\Model\FcuHierarchy.cs" />
+    <Compile Include="DA_Assets\FCU\Model\FigmaComponent.cs" />
+    <Compile Include="DA_Assets\FCU\Model\FigmaProject.cs" />
+    <Compile Include="DA_Assets\FCU\Model\FigmaUser.cs" />
+    <Compile Include="DA_Assets\FCU\Model\FillGeometry.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Filters.cs" />
+    <Compile Include="DA_Assets\FCU\Model\FlowStartingPoint.cs" />
+    <Compile Include="DA_Assets\FCU\Model\FObject.cs" />
+    <Compile Include="DA_Assets\FCU\Model\GradientStop.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Hyperlink.cs" />
+    <Compile Include="DA_Assets\FCU\Model\HyperlinkType.cs" />
+    <Compile Include="DA_Assets\FCU\Model\IndividualStrokeWeights.cs" />
+    <Compile Include="DA_Assets\FCU\Model\IVisible.cs" />
+    <Compile Include="DA_Assets\FCU\Model\LayoutAlign.cs" />
+    <Compile Include="DA_Assets\FCU\Model\LayoutGrid.cs" />
+    <Compile Include="DA_Assets\FCU\Model\LayoutMode.cs" />
+    <Compile Include="DA_Assets\FCU\Model\LayoutPositioning.cs" />
+    <Compile Include="DA_Assets\FCU\Model\LayoutWrap.cs" />
+    <Compile Include="DA_Assets\FCU\Model\NodeType.cs" />
+    <Compile Include="DA_Assets\FCU\Model\OpentypeFlags.cs" />
+    <Compile Include="DA_Assets\FCU\Model\OverflowDirection.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Paint.cs" />
+    <Compile Include="DA_Assets\FCU\Model\PaintType.cs" />
+    <Compile Include="DA_Assets\FCU\Model\PrimaryAxisAlignItem.cs" />
+    <Compile Include="DA_Assets\FCU\Model\PrimaryAxisSizingMode.cs" />
+    <Compile Include="DA_Assets\FCU\Model\PrototypeDevice.cs" />
+    <Compile Include="DA_Assets\FCU\Model\PrototypeDeviceType.cs" />
+    <Compile Include="DA_Assets\FCU\Model\SelectableItem.cs" />
+    <Compile Include="DA_Assets\FCU\Model\StrokeAlign.cs" />
+    <Compile Include="DA_Assets\FCU\Model\StrokeCap.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Style.cs" />
+    <Compile Include="DA_Assets\FCU\Model\Styles.cs" />
+    <Compile Include="DA_Assets\FCU\Model\SyncData.cs" />
+    <Compile Include="DA_Assets\FCU\Model\TagConfig.cs" />
+    <Compile Include="DA_Assets\FCU\Model\TextAutoResize.cs" />
+    <Compile Include="DA_Assets\FCU\OtherExtensions.cs" />
+    <Compile Include="DA_Assets\FCU\PositioningMode.cs" />
+    <Compile Include="DA_Assets\FCU\PrefabStruct.cs" />
+    <Compile Include="DA_Assets\FCU\PreImportInput.cs" />
+    <Compile Include="DA_Assets\FCU\PreImportOutput.cs" />
+    <Compile Include="DA_Assets\FCU\PreserveRatioMode.cs" />
+    <Compile Include="DA_Assets\FCU\ProceduralCondition.cs" />
+    <Compile Include="DA_Assets\FCU\RectOffsetCustom.cs" />
+    <Compile Include="DA_Assets\FCU\RequestCreator.cs" />
+    <Compile Include="DA_Assets\FCU\ResolutionData.cs" />
+    <Compile Include="DA_Assets\FCU\Return.cs" />
+    <Compile Include="DA_Assets\FCU\RoundingConfig.cs" />
+    <Compile Include="DA_Assets\FCU\ScriptData.cs" />
+    <Compile Include="DA_Assets\FCU\SelectableFObject.cs" />
+    <Compile Include="DA_Assets\FCU\SelectableObject.cs" />
+    <Compile Include="DA_Assets\FCU\ShadowComponent.cs" />
+    <Compile Include="DA_Assets\FCU\StopImportReason.cs" />
+    <Compile Include="DA_Assets\FCU\SvgCondition.cs" />
+    <Compile Include="DA_Assets\FCU\SyncHelper.cs" />
+    <Compile Include="DA_Assets\FCU\TextComponent.cs" />
+    <Compile Include="DA_Assets\FCU\UguiTransformData.cs" />
+    <Compile Include="DA_Assets\FCU\UIFramework.cs" />
+    <Compile Include="DA_Assets\FCU\VectorMaterials.cs" />
+    <Compile Include="DA_Assets\FCU\WebError.cs" />
+    <Compile Include="DA_Assets\UI\FcuButton.cs" />
+    <Compile Include="DA_Assets\UI\SpriteOutline.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestHeader.cs" />
+    <Compile Include="RequestName.cs" />
+    <Compile Include="RequestType.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DA_Assets.Shared.RuntimeV2\DA_Assets.Shared.RuntimeV2.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD84}</Project>
+      <Name>DA_Assets.Shared.RuntimeV2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA_Assets.Shared\DA_Assets.Shared.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD83}</Project>
+      <Name>DA_Assets.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\netstandard\netstandard.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD8E}</Project>
+      <Name>netstandard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBD8F}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDB2}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBB}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDBF}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD0}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIElementsModule\UnityEngine.UIElementsModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD3}</Project>
+      <Name>UnityEngine.UIElementsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD4}</Project>
+      <Name>UnityEngine.UIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD2}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UnityWebRequestModule\UnityEngine.UnityWebRequestModule.csproj">
+      <Project>{4690BD40-D6F6-4A25-AD67-5B6654FCBDD7}</Project>
+      <Name>UnityEngine.UnityWebRequestModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

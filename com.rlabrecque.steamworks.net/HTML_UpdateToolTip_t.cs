@@ -1,0 +1,20 @@
+﻿using System;
+using System.Runtime.InteropServices;
+
+namespace Steamworks
+{
+	// Token: 0x02000065 RID: 101
+	[CallbackIdentity(4525)]
+	[StructLayout(LayoutKind.Sequential, Pack = 8)]
+	public struct HTML_UpdateToolTip_t
+	{
+		// Token: 0x040000F6 RID: 246
+		public const int k_iCallback = 4525;
+
+		// Token: 0x040000F7 RID: 247
+		public HHTMLBrowser unBrowserHandle;
+
+		// Token: 0x040000F8 RID: 248
+		public string pchMsg;
+	}
+}
